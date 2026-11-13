@@ -254,12 +254,13 @@ def submit_compliance_decision(proposal_id: str, req: ComplianceDecisionRequest)
     pid = row["portfolio_id"]
     now_iso = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Update Proposal
+    # Update Proposal with valid ENUM decision_code
+    db_decision_code = "APPROVED" if dec == "APPROVED" else "REJECTED_EXCLUDED_ASSET"
     cur.execute("""
         UPDATE rebalance_proposal
         SET status = ?, decision_code = ?, created_at = ?
         WHERE proposal_id = ?;
-    """, (dec, f"COMPLIANCE_{dec}: {req.comments}", now_iso, proposal_id))
+    """, (dec, db_decision_code, now_iso, proposal_id))
 
     # Log in proposal_event_log
     cur.execute("SELECT event_id FROM proposal_event_log ORDER BY event_id DESC LIMIT 1;")
