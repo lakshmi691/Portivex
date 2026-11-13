@@ -17,3 +17,7 @@ ENV/
 .idea/
 Thumbs.db
 Desktop.ini
+
+
+# Large SQL seed files
+data/sql/seed_data_mysql.sql
