@@ -173,6 +173,13 @@ async function submitLogin(e) {
         }
         return;
     }
+    if (!password) {
+        if (errBox) {
+            errBox.textContent = "Please enter your password.";
+            errBox.classList.remove("hidden");
+        }
+        return;
+    }
 
     if (btn) {
         btn.textContent = "Logging In...";

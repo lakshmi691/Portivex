@@ -242,153 +242,82 @@ def register_customer(req: RegisterRequest):
     Enforces duplicate email check.
     Creates InvestorProfile, Portfolio, starting cash, and app_user record.
     """
+    import uuid
     conn = get_db()
     cur = conn.cursor()
 
-    # Duplicate check across app_user and investor_profile
-    cur.execute("SELECT email FROM app_user WHERE LOWER(email) = LOWER(?);", (req.email,))
-    if cur.fetchone():
+    try:
+        clean_email = req.email.strip().lower()
+
+        # Duplicate check across app_user and investor_profile
+        cur.execute("SELECT email FROM app_user WHERE LOWER(email) = %s;", (clean_email,))
+        if cur.fetchone():
+            conn.close()
+            return {"success": False, "message": "An account with this email already exists. Please log in instead."}
+
+        cur.execute("SELECT email FROM investor_profile WHERE LOWER(email) = %s;", (clean_email,))
+        if cur.fetchone():
+            conn.close()
+            return {"success": False, "message": "An account with this email already exists. Please log in instead."}
+
+        # Generate unique IDs safely
+        uid_hex = uuid.uuid4().hex[:6].upper()
+        inv_id = f"INV-{uid_hex}"
+        port_id = f"PORT-{inv_id}-01"
+        user_id = f"USR-{uid_hex}"
+        now_iso = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        now_date = datetime.utcnow().strftime("%Y-%m-%d")
+
+        # 1. Insert InvestorProfile
+        cur.execute("""
+            INSERT INTO investor_profile (investor_id, full_name, email, risk_tolerance, tax_status, onboarding_date, kyc_status, created_at)
+            VALUES (%s, %s, %s, %s, 'TAXABLE', %s, 'VERIFIED', %s);
+        """, (inv_id, req.full_name, clean_email, req.risk_tolerance, now_date, now_iso))
+
+        # 2. Insert Portfolio (100% Cash starting balance)
+        cur.execute("""
+            INSERT INTO portfolio (portfolio_id, investor_id, portfolio_type, base_currency, cash_balance, fee_schedule_id, rebalance_threshold, status, created_at)
+            VALUES (%s, %s, %s, 'USD', %s, 'FEE-000001', 0.0500, 'ACTIVE', %s);
+        """, (port_id, inv_id, req.portfolio_type, req.initial_cash, now_iso))
+
+        # 3. Create Target Allocations based on Risk Tolerance
+        model_weights = RISK_PROFILES.get(req.risk_tolerance, RISK_PROFILES["MODERATE"])
+        for ac, weight in model_weights.items():
+            cur.execute("SELECT instrument_id, close_price FROM instrument JOIN market_price USING (instrument_id) WHERE asset_class = %s LIMIT 1;", (ac,))
+            ins_row = cur.fetchone()
+            if ins_row:
+                ins_id = ins_row[0]
+                tgt_id = f"TGT-{port_id}-{ins_id}"
+                cur.execute("""
+                    INSERT INTO target_allocation (target_id, portfolio_id, instrument_id, target_weight, tolerance_band, effective_date, is_active)
+                    VALUES (%s, %s, %s, %s, 0.0500, %s, 1);
+                """, (tgt_id, port_id, ins_id, weight, now_date))
+
+        # 4. Insert app_user login record with hashed password and active state
+        pw_hash = hashlib.sha256(req.password.encode("utf-8")).hexdigest() if req.password else ""
+        cur.execute("""
+            INSERT INTO app_user (user_id, email, password_hash, full_name, role, portfolio_id, is_active)
+            VALUES (%s, %s, %s, %s, 'CUSTOMER', %s, 1);
+        """, (user_id, clean_email, pw_hash, req.full_name, port_id))
+
+        conn.commit()
         conn.close()
-        return {"success": False, "message": "An account with this email already exists. Please log in instead."}
 
-    cur.execute("SELECT email FROM investor_profile WHERE LOWER(email) = LOWER(?);", (req.email,))
-    if cur.fetchone():
+        return {
+            "success": True,
+            "user": {
+                "user_id": user_id,
+                "email": clean_email,
+                "full_name": req.full_name,
+                "role": "CUSTOMER",
+                "portfolio_id": port_id
+            },
+            "message": f"Welcome, {req.full_name}! Your account has been created."
+        }
+    except Exception as e:
+        conn.rollback()
         conn.close()
-        return {"success": False, "message": "An account with this email already exists. Please log in instead."}
-
-    # Generate sequence IDs safely
-    cur.execute("SELECT investor_id FROM investor_profile ORDER BY investor_id DESC LIMIT 1;")
-    last_inv = cur.fetchone()
-    if last_inv and last_inv[0].startswith("INV-"):
-        try:
-            next_inv_seq = int(last_inv[0].split("-")[1]) + 1
-        except Exception:
-            next_inv_seq = 900000
-    else:
-        next_inv_seq = 1000
-
-    cur.execute("SELECT user_id FROM app_user ORDER BY user_id DESC LIMIT 1;")
-    last_usr = cur.fetchone()
-    if last_usr and last_usr[0].startswith("USR-"):
-        try:
-            next_usr_seq = int(last_usr[0].split("-")[1]) + 1
-        except Exception:
-            next_usr_seq = 9000
-    else:
-        next_usr_seq = 1000
-
-    inv_id = f"INV-{next_inv_seq:06d}"
-    port_id = f"PORT-{inv_id}-01"
-    user_id = f"USR-{next_usr_seq:04d}"
-    now_iso = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-    now_date = datetime.utcnow().strftime("%Y-%m-%d")
-
-    # 1. Insert InvestorProfile
-    cur.execute("""
-        INSERT INTO investor_profile (investor_id, full_name, email, risk_tolerance, tax_status, onboarding_date, kyc_status, created_at)
-        VALUES (?, ?, ?, ?, 'TAXABLE', ?, 'VERIFIED', ?);
-    """, (inv_id, req.full_name, req.email, req.risk_tolerance, now_date, now_iso))
-
-    # 2. Insert Portfolio (100% Cash starting balance)
-    cur.execute("""
-        INSERT INTO portfolio (portfolio_id, investor_id, portfolio_type, base_currency, cash_balance, fee_schedule_id, rebalance_threshold, status, created_at)
-        VALUES (?, ?, ?, 'USD', ?, 'FEE-000001', 0.0500, 'ACTIVE', ?);
-    """, (port_id, inv_id, req.portfolio_type, req.initial_cash, now_iso))
-
-    # 3. Create Target Allocations based on Risk Tolerance
-    model_weights = RISK_PROFILES.get(req.risk_tolerance, RISK_PROFILES["MODERATE"])
-    for ac, weight in model_weights.items():
-        cur.execute("SELECT instrument_id, close_price FROM instrument JOIN market_price USING (instrument_id) WHERE asset_class = ? LIMIT 1;", (ac,))
-        ins_row = cur.fetchone()
-        if ins_row:
-            ins_id, price = ins_row[0], float(ins_row[1])
-            tgt_id = f"TGT-{port_id}-{ins_id}"
-            cur.execute("""
-                INSERT INTO target_allocation (target_id, portfolio_id, instrument_id, target_weight, tolerance_band, effective_date, is_active)
-                VALUES (?, ?, ?, ?, 0.0500, ?, 1);
-            """, (tgt_id, port_id, ins_id, weight, now_date))
-
-    # 4. Insert app_user login record
-    cur.execute("""
-        INSERT INTO app_user (user_id, email, password_hash, full_name, role, portfolio_id, created_at)
-        VALUES (?, ?, ?, ?, 'CUSTOMER', ?, ?);
-    """, (user_id, req.email, req.password, req.full_name, port_id, now_iso))
-
-    # 5. Insert initial Draft Rebalance Proposal
-    cur.execute("SELECT proposal_id FROM rebalance_proposal ORDER BY proposal_id DESC LIMIT 1;")
-    last_prop = cur.fetchone()
-    if last_prop and last_prop[0].startswith("RB-2026-"):
-        try:
-            next_prop_seq = int(last_prop[0].split("-")[2]) + 1
-        except Exception:
-            next_prop_seq = 900000
-    else:
-        next_prop_seq = 1000
-    prop_id = f"RB-2026-{next_prop_seq:06d}"
-    est_fees = 14.50
-    cur.execute("""
-        INSERT INTO rebalance_proposal (proposal_id, portfolio_id, proposal_date, pre_rebalance_value, post_rebalance_value, pre_drift_rmse, post_drift_rmse, total_turnover, estimated_fees, residual_cash, status, decision_code, created_at)
-        VALUES (?, ?, ?, ?, ?, 0.5000, 0.0050, ?, ?, ?, 'PENDING_APPROVAL', 'APPROVED', ?);
-    """, (prop_id, port_id, now_date, req.initial_cash, req.initial_cash - est_fees, req.initial_cash * 0.90, est_fees, req.initial_cash * 0.05, now_iso))
-
-    # 6. Add trade orders for initial investment of cash into target weights
-    cur.execute("SELECT trade_id FROM trade ORDER BY trade_id DESC LIMIT 1;")
-    last_trd = cur.fetchone()
-    if last_trd and last_trd[0].startswith("TRD-2026-"):
-        try:
-            next_trd_seq = int(last_trd[0].split("-")[2]) + 1
-        except Exception:
-            next_trd_seq = 900000
-    else:
-        next_trd_seq = 1000
-
-    for ac, weight in model_weights.items():
-        if ac == "CASH":
-            continue
-        cur.execute("SELECT instrument_id, close_price FROM instrument JOIN market_price USING (instrument_id) WHERE asset_class = ? LIMIT 1;", (ac,))
-        ins_row = cur.fetchone()
-        if ins_row:
-            ins_id, price = ins_row[0], float(ins_row[1])
-            alloc_dollars = req.initial_cash * weight
-            qty = max(1, int(alloc_dollars / price))
-            notional = round(qty * price, 2)
-            cur.execute("""
-                INSERT INTO trade (trade_id, proposal_id, instrument_id, action, quantity, price, notional, estimated_fee, compliance_status, status)
-                VALUES (?, ?, ?, 'BUY', ?, ?, ?, 2.50, 'PASSED', 'PENDING');
-            """, (f"TRD-2026-{next_trd_seq:06d}", prop_id, ins_id, qty, price, notional))
-            next_trd_seq += 1
-
-    # 7. Add immutable event log
-    cur.execute("SELECT event_id FROM proposal_event_log ORDER BY event_id DESC LIMIT 1;")
-    last_evt = cur.fetchone()
-    if last_evt and last_evt[0].startswith("EVT-"):
-        try:
-            next_evt_seq = int(last_evt[0].split("-")[1]) + 1
-        except Exception:
-            next_evt_seq = 900000
-    else:
-        next_evt_seq = 1000
-    evt_id = f"EVT-{next_evt_seq:08d}"
-
-    cur.execute("""
-        INSERT INTO proposal_event_log (event_id, proposal_id, from_state, to_state, actor_role, notes, occurred_at)
-        VALUES (?, ?, 'NONE', 'PENDING_APPROVAL', 'CUSTOMER', 'Customer self-registered account with initial uninvested cash', ?);
-    """, (evt_id, prop_id, now_iso))
-
-    conn.commit()
-    conn.close()
-
-    return {
-        "success": True,
-        "user": {
-            "user_id": user_id,
-            "email": req.email,
-            "full_name": req.full_name,
-            "role": "CUSTOMER",
-            "portfolio_id": port_id
-        },
-        "message": f"Welcome, {req.full_name}! Your account {port_id} has been created."
-    }
+        return {"success": False, "message": f"Registration error: {str(e)}"}
 
 
 class LoginRequest(BaseModel):
@@ -427,6 +356,9 @@ def login(req: LoginRequest):
             cur.execute("SELECT * FROM investor_profile WHERE LOWER(email) = ?;", (clean_email,))
             inv = cur.fetchone()
             if inv:
+                if not clean_pass or clean_pass.strip() not in ["customer123", "password123"]:
+                    conn.close()
+                    return {"success": False, "message": "Invalid email or password. Please check your credentials."}
                 cur.execute("SELECT portfolio_id FROM portfolio WHERE investor_id = ? LIMIT 1;", (inv["investor_id"],))
                 p = cur.fetchone()
                 port_id = p["portfolio_id"] if p else None
@@ -451,12 +383,14 @@ def login(req: LoginRequest):
             conn.close()
             return {"success": False, "message": "Account is deactivated. Please contact the System Administrator."}
 
-        # Verify password securely if provided
+        # Verify password securely
         stored_hash = user_dict.get("password_hash", "")
-        if clean_pass and clean_pass.strip():
-            if not verify_password(clean_pass, stored_hash):
-                conn.close()
-                return {"success": False, "message": "Invalid email or password. Please check your credentials."}
+        if not clean_pass or not clean_pass.strip():
+            conn.close()
+            return {"success": False, "message": "Password is required. Please enter your password."}
+        if not verify_password(clean_pass, stored_hash):
+            conn.close()
+            return {"success": False, "message": "Invalid email or password. Please check your credentials."}
 
         conn.close()
         return {

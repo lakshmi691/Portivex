@@ -110,6 +110,8 @@ def main():
     html = get_text("/")
     assert "actor-tabs" not in html, "ERROR: actor-tabs still present in HTML!"
     assert "portivex-quick-roles" not in html, "ERROR: quick role tester buttons still present!"
+    assert 'id="login-email"' in html, "Missing login email field"
+    assert 'id="login-pass"' in html, "Missing login password field"
     assert "view-cust-dashboard" in html, "Missing view-cust-dashboard"
     assert "view-cust-portfolio" in html, "Missing view-cust-portfolio"
     assert "view-cust-orders" in html, "Missing view-cust-orders"
