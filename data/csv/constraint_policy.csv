@@ -1,0 +1,4 @@
+constraint_id,constraint_name,constraint_type,parameters_json,is_mandatory
+CST-000001,MIN_TRADE_SIZE_100,MIN_TRADE_SIZE,"{'constraint_id': 'CST-000001', 'constraint_name': 'MIN_TRADE_SIZE_100', 'constraint_type': 'MIN_TRADE_SIZE', 'min_usd': 100.0}",True
+CST-000002,RESTRICTED_LIST,EXCLUDED_INSTRUMENT,"{'constraint_id': 'CST-000002', 'constraint_name': 'RESTRICTED_LIST', 'constraint_type': 'EXCLUDED_INSTRUMENT', 'restricted_tickers': ['INS-000042']}",True
+CST-000003,NO_SHORT_SELLING,NO_SHORT_SELLING,"{'constraint_id': 'CST-000003', 'constraint_name': 'NO_SHORT_SELLING', 'constraint_type': 'NO_SHORT_SELLING', 'allow_short': False}",True

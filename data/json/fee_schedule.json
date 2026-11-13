@@ -1,0 +1,29 @@
+[
+  {
+    "fee_schedule_id": "FEE-000001",
+    "name": "RETAIL_FLAT",
+    "fee_type": "FLAT",
+    "flat_fee": 4.95,
+    "bps_rate": 0.0,
+    "min_fee": 4.95,
+    "max_fee": 4.95
+  },
+  {
+    "fee_schedule_id": "FEE-000002",
+    "name": "INSTITUTIONAL_BPS",
+    "fee_type": "BPS_NOTIONAL",
+    "flat_fee": 0.0,
+    "bps_rate": 0.001,
+    "min_fee": 1.0,
+    "max_fee": 150.0
+  },
+  {
+    "fee_schedule_id": "FEE-000003",
+    "name": "TIERED_PREMIUM",
+    "fee_type": "TIERED",
+    "flat_fee": 1.5,
+    "bps_rate": 0.0005,
+    "min_fee": 1.5,
+    "max_fee": 75.0
+  }
+]

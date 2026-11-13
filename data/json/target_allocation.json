@@ -1,0 +1,2252 @@
+[
+  {
+    "target_id": "TGT-PORT-INV-000001-01-INS-000001",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000001",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-01-INS-000004",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000004",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-01-INS-000013",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000013",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-01-INS-000019",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000019",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-01-INS-000025",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000025",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-01-INS-000002",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000002",
+    "target_weight": 0.53,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-01-INS-000012",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000012",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-01-INS-000018",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000018",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-01-INS-000024",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000024",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-01-INS-000030",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000030",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-01-INS-000011",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000011",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-01-INS-000017",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000017",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-01-INS-000023",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000023",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-01-INS-000029",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000029",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-01-INS-000035",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000035",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-01-INS-000016",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000016",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-01-INS-000022",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000022",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-01-INS-000028",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000028",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-01-INS-000034",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000034",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-01-INS-000040",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000040",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-01-INS-000021",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000021",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-01-INS-000027",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000027",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-01-INS-000033",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000033",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-01-INS-000039",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000039",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-01-INS-000045",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000045",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-01-INS-000026",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000026",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-01-INS-000032",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000032",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-01-INS-000038",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000038",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-01-INS-000044",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000044",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-01-INS-000050",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000050",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-01-INS-000031",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000031",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-01-INS-000037",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000037",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-01-INS-000043",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000043",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-01-INS-000049",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000049",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-01-INS-000055",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000055",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-01-INS-000036",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000036",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-01-INS-000042",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000042",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-01-INS-000048",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000048",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-01-INS-000054",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000054",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-01-INS-000060",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000060",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-01-INS-000041",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000041",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-01-INS-000047",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000047",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-01-INS-000053",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000053",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-01-INS-000059",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000059",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-01-INS-000065",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000065",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-01-INS-000046",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000046",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-01-INS-000052",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000052",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-01-INS-000058",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000058",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-01-INS-000064",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000064",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-01-INS-000070",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000070",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-01-INS-000051",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000051",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-01-INS-000057",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000057",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-01-INS-000063",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000063",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-01-INS-000069",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000069",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-01-INS-000075",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000075",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-01-INS-000056",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000056",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-01-INS-000062",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000062",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-01-INS-000068",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000068",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-01-INS-000074",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000074",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-01-INS-000080",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000080",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-01-INS-000061",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000061",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-01-INS-000067",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000067",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-01-INS-000073",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000073",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-01-INS-000079",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000079",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-01-INS-000085",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000085",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-01-INS-000066",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000066",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-01-INS-000072",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000072",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-01-INS-000078",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000078",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-01-INS-000084",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000084",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-01-INS-000090",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000090",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-01-INS-000071",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000071",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-01-INS-000077",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000077",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-01-INS-000083",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000083",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-01-INS-000089",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000089",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-01-INS-000095",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000095",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-01-INS-000076",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000076",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-01-INS-000082",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000082",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-01-INS-000088",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000088",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-01-INS-000094",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000094",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-01-INS-000100",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000100",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-01-INS-000081",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000081",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-01-INS-000087",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000087",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-01-INS-000093",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000093",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-01-INS-000099",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000099",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-01-INS-000105",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000105",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-01-INS-000086",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000086",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-01-INS-000092",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000092",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-01-INS-000098",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000098",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-01-INS-000104",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000104",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-01-INS-000110",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000110",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-01-INS-000091",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000091",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-01-INS-000097",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000097",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-01-INS-000103",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000103",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-01-INS-000109",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000109",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-01-INS-000115",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000115",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-01-INS-000096",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000096",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-01-INS-000102",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000102",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-01-INS-000108",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000108",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-01-INS-000114",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000114",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-01-INS-000120",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000120",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-02-INS-000101",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000101",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-02-INS-000107",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000107",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-02-INS-000113",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000113",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-02-INS-000119",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000119",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-02-INS-000125",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000125",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-02-INS-000106",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000106",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-02-INS-000112",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000112",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-02-INS-000118",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000118",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-02-INS-000124",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000124",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-02-INS-000130",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000130",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-02-INS-000111",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000111",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-02-INS-000117",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000117",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-02-INS-000123",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000123",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-02-INS-000129",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000129",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-02-INS-000135",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000135",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-02-INS-000116",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000116",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-02-INS-000122",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000122",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-02-INS-000128",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000128",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-02-INS-000134",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000134",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-02-INS-000140",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000140",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-02-INS-000121",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000121",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-02-INS-000127",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000127",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-02-INS-000133",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000133",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-02-INS-000139",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000139",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-02-INS-000145",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000145",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-02-INS-000126",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000126",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-02-INS-000132",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000132",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-02-INS-000138",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000138",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-02-INS-000144",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000144",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-02-INS-000150",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000150",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-02-INS-000131",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000131",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-02-INS-000137",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000137",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-02-INS-000143",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000143",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-02-INS-000149",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000149",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-02-INS-000155",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000155",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-02-INS-000136",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000136",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-02-INS-000142",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000142",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-02-INS-000148",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000148",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-02-INS-000154",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000154",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-02-INS-000160",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000160",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-02-INS-000141",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000141",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-02-INS-000147",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000147",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-02-INS-000153",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000153",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-02-INS-000159",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000159",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-02-INS-000165",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000165",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-02-INS-000146",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000146",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-02-INS-000152",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000152",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-02-INS-000158",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000158",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-02-INS-000164",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000164",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-02-INS-000170",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000170",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-02-INS-000151",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000151",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-02-INS-000157",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000157",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-02-INS-000163",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000163",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-02-INS-000169",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000169",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000011-02-INS-000175",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000175",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-02-INS-000156",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000156",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-02-INS-000162",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000162",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-02-INS-000168",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000168",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-02-INS-000174",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000174",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000012-02-INS-000180",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000180",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-02-INS-000161",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000161",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-02-INS-000167",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000167",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-02-INS-000173",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000173",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-02-INS-000179",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000179",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000013-02-INS-000185",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000185",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-02-INS-000166",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000166",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-02-INS-000172",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000172",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-02-INS-000178",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000178",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-02-INS-000184",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000184",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000014-02-INS-000190",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000190",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-02-INS-000171",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000171",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-02-INS-000177",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000177",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-02-INS-000183",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000183",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-02-INS-000189",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000189",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000015-02-INS-000195",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000195",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-02-INS-000176",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000176",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-02-INS-000182",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000182",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-02-INS-000188",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000188",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-02-INS-000194",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000194",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000016-02-INS-000200",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000200",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-02-INS-000181",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000181",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-02-INS-000187",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000187",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-02-INS-000193",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000193",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-02-INS-000199",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000199",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000017-02-INS-000007",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000007",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-02-INS-000186",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000186",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-02-INS-000192",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000192",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-02-INS-000198",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000198",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-02-INS-000006",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000006",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000018-02-INS-000010",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000010",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-02-INS-000191",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000191",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-02-INS-000197",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000197",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-02-INS-000005",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000005",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-02-INS-000009",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000009",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000019-02-INS-000015",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000015",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-02-INS-000196",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000196",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-02-INS-000003",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000003",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-02-INS-000008",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000008",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-02-INS-000014",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000014",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000020-02-INS-000020",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000020",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-03-INS-000001",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000001",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-03-INS-000004",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000004",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-03-INS-000013",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000013",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-03-INS-000019",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000019",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000001-03-INS-000025",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000025",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-03-INS-000002",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000002",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-03-INS-000012",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000012",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-03-INS-000018",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000018",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-03-INS-000024",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000024",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000002-03-INS-000030",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000030",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-03-INS-000011",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000011",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-03-INS-000017",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000017",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-03-INS-000023",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000023",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-03-INS-000029",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000029",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000003-03-INS-000035",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000035",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-03-INS-000016",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000016",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-03-INS-000022",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000022",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-03-INS-000028",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000028",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-03-INS-000034",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000034",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000004-03-INS-000040",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000040",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-03-INS-000021",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000021",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-03-INS-000027",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000027",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-03-INS-000033",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000033",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-03-INS-000039",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000039",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000005-03-INS-000045",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000045",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-03-INS-000026",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000026",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-03-INS-000032",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000032",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-03-INS-000038",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000038",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-03-INS-000044",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000044",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000006-03-INS-000050",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000050",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-03-INS-000031",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000031",
+    "target_weight": 0.65,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-03-INS-000037",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000037",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-03-INS-000043",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000043",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-03-INS-000049",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000049",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000007-03-INS-000055",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000055",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-03-INS-000036",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000036",
+    "target_weight": 0.8,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-03-INS-000042",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000042",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-03-INS-000048",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000048",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-03-INS-000054",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000054",
+    "target_weight": 0.03,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000008-03-INS-000060",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000060",
+    "target_weight": 0.02,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-03-INS-000041",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000041",
+    "target_weight": 0.2,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-03-INS-000047",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000047",
+    "target_weight": 0.6,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-03-INS-000053",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000053",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-03-INS-000059",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000059",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000009-03-INS-000065",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000065",
+    "target_weight": 0.1,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-03-INS-000046",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000046",
+    "target_weight": 0.45,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-03-INS-000052",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000052",
+    "target_weight": 0.4,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-03-INS-000058",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000058",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-03-INS-000064",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000064",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  },
+  {
+    "target_id": "TGT-PORT-INV-000010-03-INS-000070",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000070",
+    "target_weight": 0.05,
+    "tolerance_band": 0.05,
+    "effective_date": "2025-01-02",
+    "is_active": true
+  }
+]

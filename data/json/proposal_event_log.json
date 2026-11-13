@@ -1,0 +1,902 @@
+[
+  {
+    "event_id": "EVT-00000001",
+    "proposal_id": "RB-2026-000001",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000002",
+    "proposal_id": "RB-2026-000001",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000003",
+    "proposal_id": "RB-2026-000002",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000004",
+    "proposal_id": "RB-2026-000002",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000005",
+    "proposal_id": "RB-2026-000003",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000006",
+    "proposal_id": "RB-2026-000003",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000007",
+    "proposal_id": "RB-2026-000004",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000008",
+    "proposal_id": "RB-2026-000004",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 4 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000009",
+    "proposal_id": "RB-2026-000005",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000010",
+    "proposal_id": "RB-2026-000005",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000011",
+    "proposal_id": "RB-2026-000006",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000012",
+    "proposal_id": "RB-2026-000006",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000013",
+    "proposal_id": "RB-2026-000007",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000014",
+    "proposal_id": "RB-2026-000007",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000015",
+    "proposal_id": "RB-2026-000008",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000016",
+    "proposal_id": "RB-2026-000008",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000017",
+    "proposal_id": "RB-2026-000009",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000018",
+    "proposal_id": "RB-2026-000009",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000019",
+    "proposal_id": "RB-2026-000010",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000020",
+    "proposal_id": "RB-2026-000010",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000021",
+    "proposal_id": "RB-2026-000011",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000022",
+    "proposal_id": "RB-2026-000011",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000023",
+    "proposal_id": "RB-2026-000012",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000024",
+    "proposal_id": "RB-2026-000012",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000025",
+    "proposal_id": "RB-2026-000013",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000026",
+    "proposal_id": "RB-2026-000013",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000027",
+    "proposal_id": "RB-2026-000014",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000028",
+    "proposal_id": "RB-2026-000014",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000029",
+    "proposal_id": "RB-2026-000015",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000030",
+    "proposal_id": "RB-2026-000015",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000031",
+    "proposal_id": "RB-2026-000016",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000032",
+    "proposal_id": "RB-2026-000016",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000033",
+    "proposal_id": "RB-2026-000017",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000034",
+    "proposal_id": "RB-2026-000017",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000035",
+    "proposal_id": "RB-2026-000018",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000036",
+    "proposal_id": "RB-2026-000018",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000037",
+    "proposal_id": "RB-2026-000019",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000038",
+    "proposal_id": "RB-2026-000019",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 4 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000039",
+    "proposal_id": "RB-2026-000020",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000040",
+    "proposal_id": "RB-2026-000020",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000041",
+    "proposal_id": "RB-2026-000021",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000042",
+    "proposal_id": "RB-2026-000021",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 4 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000043",
+    "proposal_id": "RB-2026-000022",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000044",
+    "proposal_id": "RB-2026-000022",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000045",
+    "proposal_id": "RB-2026-000023",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000046",
+    "proposal_id": "RB-2026-000023",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000047",
+    "proposal_id": "RB-2026-000024",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000048",
+    "proposal_id": "RB-2026-000024",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 4 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000049",
+    "proposal_id": "RB-2026-000025",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000050",
+    "proposal_id": "RB-2026-000025",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000051",
+    "proposal_id": "RB-2026-000026",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000052",
+    "proposal_id": "RB-2026-000026",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000053",
+    "proposal_id": "RB-2026-000027",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000054",
+    "proposal_id": "RB-2026-000027",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000055",
+    "proposal_id": "RB-2026-000028",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000056",
+    "proposal_id": "RB-2026-000028",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000057",
+    "proposal_id": "RB-2026-000029",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000058",
+    "proposal_id": "RB-2026-000029",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000059",
+    "proposal_id": "RB-2026-000030",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000060",
+    "proposal_id": "RB-2026-000030",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 4 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000061",
+    "proposal_id": "RB-2026-000031",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000062",
+    "proposal_id": "RB-2026-000031",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000063",
+    "proposal_id": "RB-2026-000032",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000064",
+    "proposal_id": "RB-2026-000032",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000065",
+    "proposal_id": "RB-2026-000033",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000066",
+    "proposal_id": "RB-2026-000033",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000067",
+    "proposal_id": "RB-2026-000034",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000068",
+    "proposal_id": "RB-2026-000034",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000069",
+    "proposal_id": "RB-2026-000035",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000070",
+    "proposal_id": "RB-2026-000035",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000071",
+    "proposal_id": "RB-2026-000036",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000072",
+    "proposal_id": "RB-2026-000036",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000073",
+    "proposal_id": "RB-2026-000037",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000074",
+    "proposal_id": "RB-2026-000037",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000075",
+    "proposal_id": "RB-2026-000038",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000076",
+    "proposal_id": "RB-2026-000038",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000077",
+    "proposal_id": "RB-2026-000039",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000078",
+    "proposal_id": "RB-2026-000039",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000079",
+    "proposal_id": "RB-2026-000040",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000080",
+    "proposal_id": "RB-2026-000040",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000081",
+    "proposal_id": "RB-2026-000041",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000082",
+    "proposal_id": "RB-2026-000041",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000083",
+    "proposal_id": "RB-2026-000042",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000084",
+    "proposal_id": "RB-2026-000042",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000085",
+    "proposal_id": "RB-2026-000043",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000086",
+    "proposal_id": "RB-2026-000043",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000087",
+    "proposal_id": "RB-2026-000044",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000088",
+    "proposal_id": "RB-2026-000044",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000089",
+    "proposal_id": "RB-2026-000045",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000090",
+    "proposal_id": "RB-2026-000045",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000091",
+    "proposal_id": "RB-2026-000046",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000092",
+    "proposal_id": "RB-2026-000046",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000093",
+    "proposal_id": "RB-2026-000047",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000094",
+    "proposal_id": "RB-2026-000047",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000095",
+    "proposal_id": "RB-2026-000048",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000096",
+    "proposal_id": "RB-2026-000048",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 4 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000097",
+    "proposal_id": "RB-2026-000049",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000098",
+    "proposal_id": "RB-2026-000049",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000099",
+    "proposal_id": "RB-2026-000050",
+    "from_state": "NONE",
+    "to_state": "DRAFT",
+    "actor_role": "SYSTEM",
+    "notes": "Automated proposal generated",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  },
+  {
+    "event_id": "EVT-00000100",
+    "proposal_id": "RB-2026-000050",
+    "from_state": "DRAFT",
+    "to_state": "COMPLIANCE_APPROVED",
+    "actor_role": "COMPLIANCE_REVIEWER",
+    "notes": "Approved 5 orders",
+    "occurred_at": "2025-12-31T16:35:00Z"
+  }
+]

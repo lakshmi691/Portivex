@@ -1,0 +1,202 @@
+[
+  {
+    "investor_id": "INV-000001",
+    "full_name": "Alexander Sterling 1",
+    "email": "investor0001@example-fund.test",
+    "risk_tolerance": "CONSERVATIVE",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000002",
+    "full_name": "Sophia Vance 2",
+    "email": "investor0002@example-fund.test",
+    "risk_tolerance": "MODERATE",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000003",
+    "full_name": "Liam Mercer 3",
+    "email": "investor0003@example-fund.test",
+    "risk_tolerance": "GROWTH",
+    "tax_status": "TAX_EXEMPT",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000004",
+    "full_name": "Emma Chen 4",
+    "email": "investor0004@example-fund.test",
+    "risk_tolerance": "AGGRESSIVE",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000005",
+    "full_name": "Noah Kowalski 5",
+    "email": "investor0005@example-fund.test",
+    "risk_tolerance": "CONSERVATIVE",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000006",
+    "full_name": "Olivia Patel 6",
+    "email": "investor0006@example-fund.test",
+    "risk_tolerance": "MODERATE",
+    "tax_status": "TAX_EXEMPT",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000007",
+    "full_name": "Ethan Rodriguez 7",
+    "email": "investor0007@example-fund.test",
+    "risk_tolerance": "GROWTH",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000008",
+    "full_name": "Ava Kim 8",
+    "email": "investor0008@example-fund.test",
+    "risk_tolerance": "AGGRESSIVE",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000009",
+    "full_name": "Mason Blackwood 9",
+    "email": "investor0009@example-fund.test",
+    "risk_tolerance": "CONSERVATIVE",
+    "tax_status": "TAX_EXEMPT",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000010",
+    "full_name": "Isabella Sinclair 10",
+    "email": "investor0010@example-fund.test",
+    "risk_tolerance": "MODERATE",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000011",
+    "full_name": "Lucas Alvarez 11",
+    "email": "investor0011@example-fund.test",
+    "risk_tolerance": "GROWTH",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000012",
+    "full_name": "Mia Gupta 12",
+    "email": "investor0012@example-fund.test",
+    "risk_tolerance": "AGGRESSIVE",
+    "tax_status": "TAX_EXEMPT",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000013",
+    "full_name": "Alexander Sterling 13",
+    "email": "investor0013@example-fund.test",
+    "risk_tolerance": "CONSERVATIVE",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000014",
+    "full_name": "Sophia Vance 14",
+    "email": "investor0014@example-fund.test",
+    "risk_tolerance": "MODERATE",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000015",
+    "full_name": "Liam Mercer 15",
+    "email": "investor0015@example-fund.test",
+    "risk_tolerance": "GROWTH",
+    "tax_status": "TAX_EXEMPT",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000016",
+    "full_name": "Emma Chen 16",
+    "email": "investor0016@example-fund.test",
+    "risk_tolerance": "AGGRESSIVE",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000017",
+    "full_name": "Noah Kowalski 17",
+    "email": "investor0017@example-fund.test",
+    "risk_tolerance": "CONSERVATIVE",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000018",
+    "full_name": "Olivia Patel 18",
+    "email": "investor0018@example-fund.test",
+    "risk_tolerance": "MODERATE",
+    "tax_status": "TAX_EXEMPT",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000019",
+    "full_name": "Ethan Rodriguez 19",
+    "email": "investor0019@example-fund.test",
+    "risk_tolerance": "GROWTH",
+    "tax_status": "TAXABLE",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  },
+  {
+    "investor_id": "INV-000020",
+    "full_name": "Ava Kim 20",
+    "email": "investor0020@example-fund.test",
+    "risk_tolerance": "AGGRESSIVE",
+    "tax_status": "TAX_DEFERRED",
+    "onboarding_date": "2024-01-15",
+    "kyc_status": "VERIFIED",
+    "created_at": "2025-01-02T08:00:00Z"
+  }
+]

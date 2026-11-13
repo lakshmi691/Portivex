@@ -1,0 +1,2252 @@
+[
+  {
+    "holding_id": "HOLD-PORT-INV-000001-01-INS-000001",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000001",
+    "quantity": 155.0,
+    "cost_basis_per_share": 113.04,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-01-INS-000004",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000004",
+    "quantity": 528.0,
+    "cost_basis_per_share": 93.99,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-01-INS-000013",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000013",
+    "quantity": 46.0,
+    "cost_basis_per_share": 100.61,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-01-INS-000019",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000019",
+    "quantity": 45.0,
+    "cost_basis_per_share": 110.57,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-01-INS-000025",
+    "portfolio_id": "PORT-INV-000001-01",
+    "instrument_id": "INS-000025",
+    "quantity": 87.0,
+    "cost_basis_per_share": 115.75,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-01-INS-000002",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000002",
+    "quantity": 419.0,
+    "cost_basis_per_share": 106.1,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-01-INS-000012",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000012",
+    "quantity": 371.0,
+    "cost_basis_per_share": 100.94,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-01-INS-000018",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000018",
+    "quantity": 44.0,
+    "cost_basis_per_share": 126.77,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-01-INS-000024",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000024",
+    "quantity": 45.0,
+    "cost_basis_per_share": 125.03,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-01-INS-000030",
+    "portfolio_id": "PORT-INV-000002-01",
+    "instrument_id": "INS-000030",
+    "quantity": 34.0,
+    "cost_basis_per_share": 125.99,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-01-INS-000011",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000011",
+    "quantity": 644.0,
+    "cost_basis_per_share": 116.05,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-01-INS-000017",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000017",
+    "quantity": 186.0,
+    "cost_basis_per_share": 115.58,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-01-INS-000023",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000023",
+    "quantity": 39.0,
+    "cost_basis_per_share": 107.92,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-01-INS-000029",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000029",
+    "quantity": 37.0,
+    "cost_basis_per_share": 135.5,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-01-INS-000035",
+    "portfolio_id": "PORT-INV-000003-01",
+    "instrument_id": "INS-000035",
+    "quantity": 36.0,
+    "cost_basis_per_share": 124.09,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-01-INS-000016",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000016",
+    "quantity": 628.0,
+    "cost_basis_per_share": 115.44,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-01-INS-000022",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000022",
+    "quantity": 73.0,
+    "cost_basis_per_share": 121.74,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-01-INS-000028",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000028",
+    "quantity": 35.0,
+    "cost_basis_per_share": 128.55,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-01-INS-000034",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000034",
+    "quantity": 23.0,
+    "cost_basis_per_share": 143.52,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-01-INS-000040",
+    "portfolio_id": "PORT-INV-000004-01",
+    "instrument_id": "INS-000040",
+    "quantity": 15.0,
+    "cost_basis_per_share": 138.3,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-01-INS-000021",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000021",
+    "quantity": 148.0,
+    "cost_basis_per_share": 141.63,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-01-INS-000027",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000027",
+    "quantity": 487.0,
+    "cost_basis_per_share": 126.66,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-01-INS-000033",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000033",
+    "quantity": 37.0,
+    "cost_basis_per_share": 138.13,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-01-INS-000039",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000039",
+    "quantity": 39.0,
+    "cost_basis_per_share": 139.07,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-01-INS-000045",
+    "portfolio_id": "PORT-INV-000005-01",
+    "instrument_id": "INS-000045",
+    "quantity": 61.0,
+    "cost_basis_per_share": 149.17,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-01-INS-000026",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000026",
+    "quantity": 361.0,
+    "cost_basis_per_share": 131.61,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-01-INS-000032",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000032",
+    "quantity": 338.0,
+    "cost_basis_per_share": 127.87,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-01-INS-000038",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000038",
+    "quantity": 31.0,
+    "cost_basis_per_share": 147.62,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-01-INS-000044",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000044",
+    "quantity": 30.0,
+    "cost_basis_per_share": 150.21,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-01-INS-000050",
+    "portfolio_id": "PORT-INV-000006-01",
+    "instrument_id": "INS-000050",
+    "quantity": 49.0,
+    "cost_basis_per_share": 103.99,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-01-INS-000031",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000031",
+    "quantity": 427.0,
+    "cost_basis_per_share": 132.62,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-01-INS-000037",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000037",
+    "quantity": 133.0,
+    "cost_basis_per_share": 141.1,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-01-INS-000043",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000043",
+    "quantity": 26.0,
+    "cost_basis_per_share": 201.6,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-01-INS-000049",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000049",
+    "quantity": 32.0,
+    "cost_basis_per_share": 159.88,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-01-INS-000055",
+    "portfolio_id": "PORT-INV-000007-01",
+    "instrument_id": "INS-000055",
+    "quantity": 52.0,
+    "cost_basis_per_share": 111.71,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-01-INS-000036",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000036",
+    "quantity": 559.0,
+    "cost_basis_per_share": 137.31,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-01-INS-000042",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000042",
+    "quantity": 71.0,
+    "cost_basis_per_share": 150.83,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-01-INS-000048",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000048",
+    "quantity": 36.0,
+    "cost_basis_per_share": 153.03,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-01-INS-000054",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000054",
+    "quantity": 30.0,
+    "cost_basis_per_share": 103.15,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-01-INS-000060",
+    "portfolio_id": "PORT-INV-000008-01",
+    "instrument_id": "INS-000060",
+    "quantity": 16.0,
+    "cost_basis_per_share": 103.79,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-01-INS-000041",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000041",
+    "quantity": 136.0,
+    "cost_basis_per_share": 140.98,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-01-INS-000047",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000047",
+    "quantity": 474.0,
+    "cost_basis_per_share": 135.13,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-01-INS-000053",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000053",
+    "quantity": 44.0,
+    "cost_basis_per_share": 97.75,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-01-INS-000059",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000059",
+    "quantity": 41.0,
+    "cost_basis_per_share": 103.34,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-01-INS-000065",
+    "portfolio_id": "PORT-INV-000009-01",
+    "instrument_id": "INS-000065",
+    "quantity": 86.0,
+    "cost_basis_per_share": 107.49,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-01-INS-000046",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000046",
+    "quantity": 259.0,
+    "cost_basis_per_share": 161.76,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-01-INS-000052",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000052",
+    "quantity": 356.0,
+    "cost_basis_per_share": 101.64,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-01-INS-000058",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000058",
+    "quantity": 55.0,
+    "cost_basis_per_share": 80.92,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-01-INS-000064",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000064",
+    "quantity": 45.0,
+    "cost_basis_per_share": 119.47,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-01-INS-000070",
+    "portfolio_id": "PORT-INV-000010-01",
+    "instrument_id": "INS-000070",
+    "quantity": 45.0,
+    "cost_basis_per_share": 129.77,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-01-INS-000051",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000051",
+    "quantity": 608.0,
+    "cost_basis_per_share": 99.89,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-01-INS-000057",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000057",
+    "quantity": 185.0,
+    "cost_basis_per_share": 111.04,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-01-INS-000063",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000063",
+    "quantity": 49.0,
+    "cost_basis_per_share": 98.96,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-01-INS-000069",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000069",
+    "quantity": 51.0,
+    "cost_basis_per_share": 117.32,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-01-INS-000075",
+    "portfolio_id": "PORT-INV-000011-01",
+    "instrument_id": "INS-000075",
+    "quantity": 35.0,
+    "cost_basis_per_share": 134.4,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-01-INS-000056",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000056",
+    "quantity": 736.0,
+    "cost_basis_per_share": 124.8,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-01-INS-000062",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000062",
+    "quantity": 98.0,
+    "cost_basis_per_share": 110.21,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-01-INS-000068",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000068",
+    "quantity": 37.0,
+    "cost_basis_per_share": 112.94,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-01-INS-000074",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000074",
+    "quantity": 22.0,
+    "cost_basis_per_share": 118.85,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-01-INS-000080",
+    "portfolio_id": "PORT-INV-000012-01",
+    "instrument_id": "INS-000080",
+    "quantity": 15.0,
+    "cost_basis_per_share": 120.9,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-01-INS-000061",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000061",
+    "quantity": 155.0,
+    "cost_basis_per_share": 115.63,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-01-INS-000067",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000067",
+    "quantity": 458.0,
+    "cost_basis_per_share": 114.39,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-01-INS-000073",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000073",
+    "quantity": 39.0,
+    "cost_basis_per_share": 115.03,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-01-INS-000079",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000079",
+    "quantity": 40.0,
+    "cost_basis_per_share": 121.44,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-01-INS-000085",
+    "portfolio_id": "PORT-INV-000013-01",
+    "instrument_id": "INS-000085",
+    "quantity": 81.0,
+    "cost_basis_per_share": 121.84,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-01-INS-000066",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000066",
+    "quantity": 328.0,
+    "cost_basis_per_share": 131.1,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-01-INS-000072",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000072",
+    "quantity": 325.0,
+    "cost_basis_per_share": 114.97,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-01-INS-000078",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000078",
+    "quantity": 40.0,
+    "cost_basis_per_share": 148.0,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-01-INS-000084",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000084",
+    "quantity": 40.0,
+    "cost_basis_per_share": 155.55,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-01-INS-000090",
+    "portfolio_id": "PORT-INV-000014-01",
+    "instrument_id": "INS-000090",
+    "quantity": 32.0,
+    "cost_basis_per_share": 141.28,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-01-INS-000071",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000071",
+    "quantity": 538.0,
+    "cost_basis_per_share": 124.76,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-01-INS-000077",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000077",
+    "quantity": 180.0,
+    "cost_basis_per_share": 114.62,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-01-INS-000083",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000083",
+    "quantity": 30.0,
+    "cost_basis_per_share": 153.93,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-01-INS-000089",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000089",
+    "quantity": 30.0,
+    "cost_basis_per_share": 141.01,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-01-INS-000095",
+    "portfolio_id": "PORT-INV-000015-01",
+    "instrument_id": "INS-000095",
+    "quantity": 34.0,
+    "cost_basis_per_share": 139.12,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-01-INS-000076",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000076",
+    "quantity": 502.0,
+    "cost_basis_per_share": 131.76,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-01-INS-000082",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000082",
+    "quantity": 67.0,
+    "cost_basis_per_share": 141.92,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-01-INS-000088",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000088",
+    "quantity": 40.0,
+    "cost_basis_per_share": 124.68,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-01-INS-000094",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000094",
+    "quantity": 20.0,
+    "cost_basis_per_share": 140.71,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-01-INS-000100",
+    "portfolio_id": "PORT-INV-000016-01",
+    "instrument_id": "INS-000100",
+    "quantity": 19.0,
+    "cost_basis_per_share": 101.2,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-01-INS-000081",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000081",
+    "quantity": 142.0,
+    "cost_basis_per_share": 134.84,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-01-INS-000087",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000087",
+    "quantity": 428.0,
+    "cost_basis_per_share": 129.22,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-01-INS-000093",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000093",
+    "quantity": 35.0,
+    "cost_basis_per_share": 149.57,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-01-INS-000099",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000099",
+    "quantity": 41.0,
+    "cost_basis_per_share": 138.31,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-01-INS-000105",
+    "portfolio_id": "PORT-INV-000017-01",
+    "instrument_id": "INS-000105",
+    "quantity": 104.0,
+    "cost_basis_per_share": 95.88,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-01-INS-000086",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000086",
+    "quantity": 338.0,
+    "cost_basis_per_share": 132.01,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-01-INS-000092",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000092",
+    "quantity": 323.0,
+    "cost_basis_per_share": 138.64,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-01-INS-000098",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000098",
+    "quantity": 30.0,
+    "cost_basis_per_share": 154.94,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-01-INS-000104",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000104",
+    "quantity": 54.0,
+    "cost_basis_per_share": 105.45,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-01-INS-000110",
+    "portfolio_id": "PORT-INV-000018-01",
+    "instrument_id": "INS-000110",
+    "quantity": 40.0,
+    "cost_basis_per_share": 108.56,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-01-INS-000091",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000091",
+    "quantity": 377.0,
+    "cost_basis_per_share": 161.95,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-01-INS-000097",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000097",
+    "quantity": 121.0,
+    "cost_basis_per_share": 153.36,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-01-INS-000103",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000103",
+    "quantity": 46.0,
+    "cost_basis_per_share": 94.25,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-01-INS-000109",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000109",
+    "quantity": 43.0,
+    "cost_basis_per_share": 106.12,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-01-INS-000115",
+    "portfolio_id": "PORT-INV-000019-01",
+    "instrument_id": "INS-000115",
+    "quantity": 43.0,
+    "cost_basis_per_share": 108.24,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-01-INS-000096",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000096",
+    "quantity": 511.0,
+    "cost_basis_per_share": 160.04,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-01-INS-000102",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000102",
+    "quantity": 91.0,
+    "cost_basis_per_share": 109.77,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-01-INS-000108",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000108",
+    "quantity": 52.0,
+    "cost_basis_per_share": 100.35,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-01-INS-000114",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000114",
+    "quantity": 27.0,
+    "cost_basis_per_share": 111.15,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-01-INS-000120",
+    "portfolio_id": "PORT-INV-000020-01",
+    "instrument_id": "INS-000120",
+    "quantity": 18.0,
+    "cost_basis_per_share": 121.54,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-02-INS-000101",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000101",
+    "quantity": 180.0,
+    "cost_basis_per_share": 96.77,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-02-INS-000107",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000107",
+    "quantity": 567.0,
+    "cost_basis_per_share": 104.24,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-02-INS-000113",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000113",
+    "quantity": 42.0,
+    "cost_basis_per_share": 118.84,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-02-INS-000119",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000119",
+    "quantity": 51.0,
+    "cost_basis_per_share": 112.97,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-02-INS-000125",
+    "portfolio_id": "PORT-INV-000001-02",
+    "instrument_id": "INS-000125",
+    "quantity": 71.0,
+    "cost_basis_per_share": 116.22,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-02-INS-000106",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000106",
+    "quantity": 447.0,
+    "cost_basis_per_share": 97.07,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-02-INS-000112",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000112",
+    "quantity": 406.0,
+    "cost_basis_per_share": 112.07,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-02-INS-000118",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000118",
+    "quantity": 39.0,
+    "cost_basis_per_share": 115.5,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-02-INS-000124",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000124",
+    "quantity": 37.0,
+    "cost_basis_per_share": 130.51,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-02-INS-000130",
+    "portfolio_id": "PORT-INV-000002-02",
+    "instrument_id": "INS-000130",
+    "quantity": 38.0,
+    "cost_basis_per_share": 126.12,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-02-INS-000111",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000111",
+    "quantity": 549.0,
+    "cost_basis_per_share": 94.32,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-02-INS-000117",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000117",
+    "quantity": 154.0,
+    "cost_basis_per_share": 116.12,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-02-INS-000123",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000123",
+    "quantity": 40.0,
+    "cost_basis_per_share": 122.52,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-02-INS-000129",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000129",
+    "quantity": 39.0,
+    "cost_basis_per_share": 133.24,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-02-INS-000135",
+    "portfolio_id": "PORT-INV-000003-02",
+    "instrument_id": "INS-000135",
+    "quantity": 40.0,
+    "cost_basis_per_share": 135.64,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-02-INS-000116",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000116",
+    "quantity": 627.0,
+    "cost_basis_per_share": 121.98,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-02-INS-000122",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000122",
+    "quantity": 83.0,
+    "cost_basis_per_share": 124.0,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-02-INS-000128",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000128",
+    "quantity": 40.0,
+    "cost_basis_per_share": 127.81,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-02-INS-000134",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000134",
+    "quantity": 27.0,
+    "cost_basis_per_share": 130.13,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-02-INS-000140",
+    "portfolio_id": "PORT-INV-000004-02",
+    "instrument_id": "INS-000140",
+    "quantity": 12.0,
+    "cost_basis_per_share": 144.06,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-02-INS-000121",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000121",
+    "quantity": 173.0,
+    "cost_basis_per_share": 132.91,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-02-INS-000127",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000127",
+    "quantity": 521.0,
+    "cost_basis_per_share": 121.78,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-02-INS-000133",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000133",
+    "quantity": 33.0,
+    "cost_basis_per_share": 138.79,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-02-INS-000139",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000139",
+    "quantity": 38.0,
+    "cost_basis_per_share": 114.57,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-02-INS-000145",
+    "portfolio_id": "PORT-INV-000005-02",
+    "instrument_id": "INS-000145",
+    "quantity": 68.0,
+    "cost_basis_per_share": 141.76,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-02-INS-000126",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000126",
+    "quantity": 332.0,
+    "cost_basis_per_share": 114.49,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-02-INS-000132",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000132",
+    "quantity": 280.0,
+    "cost_basis_per_share": 135.02,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-02-INS-000138",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000138",
+    "quantity": 39.0,
+    "cost_basis_per_share": 114.52,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-02-INS-000144",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000144",
+    "quantity": 36.0,
+    "cost_basis_per_share": 153.3,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-02-INS-000150",
+    "portfolio_id": "PORT-INV-000006-02",
+    "instrument_id": "INS-000150",
+    "quantity": 54.0,
+    "cost_basis_per_share": 110.19,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-02-INS-000131",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000131",
+    "quantity": 473.0,
+    "cost_basis_per_share": 126.24,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-02-INS-000137",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000137",
+    "quantity": 149.0,
+    "cost_basis_per_share": 133.37,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-02-INS-000143",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000143",
+    "quantity": 38.0,
+    "cost_basis_per_share": 150.0,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-02-INS-000149",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000149",
+    "quantity": 37.0,
+    "cost_basis_per_share": 159.86,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-02-INS-000155",
+    "portfolio_id": "PORT-INV-000007-02",
+    "instrument_id": "INS-000155",
+    "quantity": 42.0,
+    "cost_basis_per_share": 109.65,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-02-INS-000136",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000136",
+    "quantity": 683.0,
+    "cost_basis_per_share": 132.14,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-02-INS-000142",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000142",
+    "quantity": 78.0,
+    "cost_basis_per_share": 142.24,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-02-INS-000148",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000148",
+    "quantity": 31.0,
+    "cost_basis_per_share": 127.97,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-02-INS-000154",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000154",
+    "quantity": 26.0,
+    "cost_basis_per_share": 96.01,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-02-INS-000160",
+    "portfolio_id": "PORT-INV-000008-02",
+    "instrument_id": "INS-000160",
+    "quantity": 18.0,
+    "cost_basis_per_share": 102.13,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-02-INS-000141",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000141",
+    "quantity": 124.0,
+    "cost_basis_per_share": 132.16,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-02-INS-000147",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000147",
+    "quantity": 367.0,
+    "cost_basis_per_share": 140.8,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-02-INS-000153",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000153",
+    "quantity": 44.0,
+    "cost_basis_per_share": 114.67,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-02-INS-000159",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000159",
+    "quantity": 46.0,
+    "cost_basis_per_share": 102.16,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-02-INS-000165",
+    "portfolio_id": "PORT-INV-000009-02",
+    "instrument_id": "INS-000165",
+    "quantity": 95.0,
+    "cost_basis_per_share": 124.14,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-02-INS-000146",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000146",
+    "quantity": 321.0,
+    "cost_basis_per_share": 123.7,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-02-INS-000152",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000152",
+    "quantity": 396.0,
+    "cost_basis_per_share": 103.95,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-02-INS-000158",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000158",
+    "quantity": 43.0,
+    "cost_basis_per_share": 114.7,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-02-INS-000164",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000164",
+    "quantity": 45.0,
+    "cost_basis_per_share": 129.23,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-02-INS-000170",
+    "portfolio_id": "PORT-INV-000010-02",
+    "instrument_id": "INS-000170",
+    "quantity": 37.0,
+    "cost_basis_per_share": 127.55,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-02-INS-000151",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000151",
+    "quantity": 657.0,
+    "cost_basis_per_share": 108.35,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-02-INS-000157",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000157",
+    "quantity": 206.0,
+    "cost_basis_per_share": 103.48,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-02-INS-000163",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000163",
+    "quantity": 34.0,
+    "cost_basis_per_share": 140.93,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-02-INS-000169",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000169",
+    "quantity": 39.0,
+    "cost_basis_per_share": 122.68,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000011-02-INS-000175",
+    "portfolio_id": "PORT-INV-000011-02",
+    "instrument_id": "INS-000175",
+    "quantity": 40.0,
+    "cost_basis_per_share": 119.18,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-02-INS-000156",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000156",
+    "quantity": 635.0,
+    "cost_basis_per_share": 105.39,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-02-INS-000162",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000162",
+    "quantity": 82.0,
+    "cost_basis_per_share": 112.96,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-02-INS-000168",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000168",
+    "quantity": 43.0,
+    "cost_basis_per_share": 111.42,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-02-INS-000174",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000174",
+    "quantity": 25.0,
+    "cost_basis_per_share": 130.86,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000012-02-INS-000180",
+    "portfolio_id": "PORT-INV-000012-02",
+    "instrument_id": "INS-000180",
+    "quantity": 16.0,
+    "cost_basis_per_share": 140.97,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-02-INS-000161",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000161",
+    "quantity": 162.0,
+    "cost_basis_per_share": 127.1,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-02-INS-000167",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000167",
+    "quantity": 538.0,
+    "cost_basis_per_share": 124.83,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-02-INS-000173",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000173",
+    "quantity": 51.0,
+    "cost_basis_per_share": 110.61,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-02-INS-000179",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000179",
+    "quantity": 41.0,
+    "cost_basis_per_share": 123.87,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000013-02-INS-000185",
+    "portfolio_id": "PORT-INV-000013-02",
+    "instrument_id": "INS-000185",
+    "quantity": 66.0,
+    "cost_basis_per_share": 147.39,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-02-INS-000166",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000166",
+    "quantity": 443.0,
+    "cost_basis_per_share": 109.83,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-02-INS-000172",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000172",
+    "quantity": 363.0,
+    "cost_basis_per_share": 126.88,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-02-INS-000178",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000178",
+    "quantity": 30.0,
+    "cost_basis_per_share": 135.03,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-02-INS-000184",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000184",
+    "quantity": 33.0,
+    "cost_basis_per_share": 128.51,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000014-02-INS-000190",
+    "portfolio_id": "PORT-INV-000014-02",
+    "instrument_id": "INS-000190",
+    "quantity": 35.0,
+    "cost_basis_per_share": 151.97,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-02-INS-000171",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000171",
+    "quantity": 456.0,
+    "cost_basis_per_share": 111.02,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-02-INS-000177",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000177",
+    "quantity": 139.0,
+    "cost_basis_per_share": 137.82,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-02-INS-000183",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000183",
+    "quantity": 41.0,
+    "cost_basis_per_share": 125.79,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-02-INS-000189",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000189",
+    "quantity": 38.0,
+    "cost_basis_per_share": 142.62,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000015-02-INS-000195",
+    "portfolio_id": "PORT-INV-000015-02",
+    "instrument_id": "INS-000195",
+    "quantity": 37.0,
+    "cost_basis_per_share": 157.68,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-02-INS-000176",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000176",
+    "quantity": 606.0,
+    "cost_basis_per_share": 117.41,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-02-INS-000182",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000182",
+    "quantity": 76.0,
+    "cost_basis_per_share": 124.92,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-02-INS-000188",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000188",
+    "quantity": 37.0,
+    "cost_basis_per_share": 132.16,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-02-INS-000194",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000194",
+    "quantity": 23.0,
+    "cost_basis_per_share": 155.01,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000016-02-INS-000200",
+    "portfolio_id": "PORT-INV-000016-02",
+    "instrument_id": "INS-000200",
+    "quantity": 21.0,
+    "cost_basis_per_share": 97.8,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-02-INS-000181",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000181",
+    "quantity": 164.0,
+    "cost_basis_per_share": 130.23,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-02-INS-000187",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000187",
+    "quantity": 501.0,
+    "cost_basis_per_share": 125.21,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-02-INS-000193",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000193",
+    "quantity": 33.0,
+    "cost_basis_per_share": 142.43,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-02-INS-000199",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000199",
+    "quantity": 33.0,
+    "cost_basis_per_share": 130.34,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000017-02-INS-000007",
+    "portfolio_id": "PORT-INV-000017-02",
+    "instrument_id": "INS-000007",
+    "quantity": 85.0,
+    "cost_basis_per_share": 103.82,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-02-INS-000186",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000186",
+    "quantity": 311.0,
+    "cost_basis_per_share": 133.59,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-02-INS-000192",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000192",
+    "quantity": 259.0,
+    "cost_basis_per_share": 155.26,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-02-INS-000198",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000198",
+    "quantity": 35.0,
+    "cost_basis_per_share": 140.76,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-02-INS-000006",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000006",
+    "quantity": 43.0,
+    "cost_basis_per_share": 110.56,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000018-02-INS-000010",
+    "portfolio_id": "PORT-INV-000018-02",
+    "instrument_id": "INS-000010",
+    "quantity": 45.0,
+    "cost_basis_per_share": 105.57,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-02-INS-000191",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000191",
+    "quantity": 392.0,
+    "cost_basis_per_share": 146.12,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-02-INS-000197",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000197",
+    "quantity": 136.0,
+    "cost_basis_per_share": 137.11,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-02-INS-000005",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000005",
+    "quantity": 47.0,
+    "cost_basis_per_share": 95.65,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-02-INS-000009",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000009",
+    "quantity": 45.0,
+    "cost_basis_per_share": 108.99,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000019-02-INS-000015",
+    "portfolio_id": "PORT-INV-000019-02",
+    "instrument_id": "INS-000015",
+    "quantity": 47.0,
+    "cost_basis_per_share": 115.92,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-02-INS-000196",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000196",
+    "quantity": 577.0,
+    "cost_basis_per_share": 143.35,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-02-INS-000003",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000003",
+    "quantity": 98.0,
+    "cost_basis_per_share": 105.41,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-02-INS-000008",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000008",
+    "quantity": 50.0,
+    "cost_basis_per_share": 99.81,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-02-INS-000014",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000014",
+    "quantity": 30.0,
+    "cost_basis_per_share": 101.96,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000020-02-INS-000020",
+    "portfolio_id": "PORT-INV-000020-02",
+    "instrument_id": "INS-000020",
+    "quantity": 14.0,
+    "cost_basis_per_share": 115.66,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-03-INS-000001",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000001",
+    "quantity": 191.0,
+    "cost_basis_per_share": 119.38,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-03-INS-000004",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000004",
+    "quantity": 647.0,
+    "cost_basis_per_share": 97.84,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-03-INS-000013",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000013",
+    "quantity": 41.0,
+    "cost_basis_per_share": 96.75,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-03-INS-000019",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000019",
+    "quantity": 41.0,
+    "cost_basis_per_share": 124.59,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000001-03-INS-000025",
+    "portfolio_id": "PORT-INV-000001-03",
+    "instrument_id": "INS-000025",
+    "quantity": 79.0,
+    "cost_basis_per_share": 124.0,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-03-INS-000002",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000002",
+    "quantity": 510.0,
+    "cost_basis_per_share": 101.79,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-03-INS-000012",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000012",
+    "quantity": 334.0,
+    "cost_basis_per_share": 99.18,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-03-INS-000018",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000018",
+    "quantity": 40.0,
+    "cost_basis_per_share": 121.57,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-03-INS-000024",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000024",
+    "quantity": 41.0,
+    "cost_basis_per_share": 132.74,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000002-03-INS-000030",
+    "portfolio_id": "PORT-INV-000002-03",
+    "instrument_id": "INS-000030",
+    "quantity": 42.0,
+    "cost_basis_per_share": 139.99,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-03-INS-000011",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000011",
+    "quantity": 584.0,
+    "cost_basis_per_share": 100.46,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-03-INS-000017",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000017",
+    "quantity": 169.0,
+    "cost_basis_per_share": 114.87,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-03-INS-000023",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000023",
+    "quantity": 48.0,
+    "cost_basis_per_share": 113.19,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-03-INS-000029",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000029",
+    "quantity": 44.0,
+    "cost_basis_per_share": 135.72,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000003-03-INS-000035",
+    "portfolio_id": "PORT-INV-000003-03",
+    "instrument_id": "INS-000035",
+    "quantity": 33.0,
+    "cost_basis_per_share": 131.79,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-03-INS-000016",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000016",
+    "quantity": 774.0,
+    "cost_basis_per_share": 116.42,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-03-INS-000022",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000022",
+    "quantity": 89.0,
+    "cost_basis_per_share": 137.15,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-03-INS-000028",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000028",
+    "quantity": 31.0,
+    "cost_basis_per_share": 136.62,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-03-INS-000034",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000034",
+    "quantity": 21.0,
+    "cost_basis_per_share": 118.82,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000004-03-INS-000040",
+    "portfolio_id": "PORT-INV-000004-03",
+    "instrument_id": "INS-000040",
+    "quantity": 14.0,
+    "cost_basis_per_share": 145.5,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-03-INS-000021",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000021",
+    "quantity": 133.0,
+    "cost_basis_per_share": 130.23,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-03-INS-000027",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000027",
+    "quantity": 439.0,
+    "cost_basis_per_share": 131.3,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-03-INS-000033",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000033",
+    "quantity": 34.0,
+    "cost_basis_per_share": 133.3,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-03-INS-000039",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000039",
+    "quantity": 35.0,
+    "cost_basis_per_share": 157.73,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000005-03-INS-000045",
+    "portfolio_id": "PORT-INV-000005-03",
+    "instrument_id": "INS-000045",
+    "quantity": 75.0,
+    "cost_basis_per_share": 137.69,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-03-INS-000026",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000026",
+    "quantity": 327.0,
+    "cost_basis_per_share": 118.92,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-03-INS-000032",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000032",
+    "quantity": 308.0,
+    "cost_basis_per_share": 136.01,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-03-INS-000038",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000038",
+    "quantity": 39.0,
+    "cost_basis_per_share": 151.27,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-03-INS-000044",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000044",
+    "quantity": 37.0,
+    "cost_basis_per_share": 146.51,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000006-03-INS-000050",
+    "portfolio_id": "PORT-INV-000006-03",
+    "instrument_id": "INS-000050",
+    "quantity": 44.0,
+    "cost_basis_per_share": 92.2,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-03-INS-000031",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000031",
+    "quantity": 527.0,
+    "cost_basis_per_share": 123.6,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-03-INS-000037",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000037",
+    "quantity": 162.0,
+    "cost_basis_per_share": 145.04,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-03-INS-000043",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000043",
+    "quantity": 23.0,
+    "cost_basis_per_share": 181.41,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-03-INS-000049",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000049",
+    "quantity": 29.0,
+    "cost_basis_per_share": 165.86,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000007-03-INS-000055",
+    "portfolio_id": "PORT-INV-000007-03",
+    "instrument_id": "INS-000055",
+    "quantity": 47.0,
+    "cost_basis_per_share": 95.03,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-03-INS-000036",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000036",
+    "quantity": 501.0,
+    "cost_basis_per_share": 145.88,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-03-INS-000042",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000042",
+    "quantity": 64.0,
+    "cost_basis_per_share": 134.56,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-03-INS-000048",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000048",
+    "quantity": 33.0,
+    "cost_basis_per_share": 141.93,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-03-INS-000054",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000054",
+    "quantity": 27.0,
+    "cost_basis_per_share": 124.54,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000008-03-INS-000060",
+    "portfolio_id": "PORT-INV-000008-03",
+    "instrument_id": "INS-000060",
+    "quantity": 19.0,
+    "cost_basis_per_share": 114.56,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-03-INS-000041",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000041",
+    "quantity": 123.0,
+    "cost_basis_per_share": 145.48,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-03-INS-000047",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000047",
+    "quantity": 432.0,
+    "cost_basis_per_share": 147.54,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-03-INS-000053",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000053",
+    "quantity": 54.0,
+    "cost_basis_per_share": 106.6,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-03-INS-000059",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000059",
+    "quantity": 50.0,
+    "cost_basis_per_share": 114.21,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000009-03-INS-000065",
+    "portfolio_id": "PORT-INV-000009-03",
+    "instrument_id": "INS-000065",
+    "quantity": 77.0,
+    "cost_basis_per_share": 104.76,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-03-INS-000046",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000046",
+    "quantity": 320.0,
+    "cost_basis_per_share": 156.33,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-03-INS-000052",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000052",
+    "quantity": 434.0,
+    "cost_basis_per_share": 101.15,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-03-INS-000058",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000058",
+    "quantity": 49.0,
+    "cost_basis_per_share": 94.97,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-03-INS-000064",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000064",
+    "quantity": 41.0,
+    "cost_basis_per_share": 105.73,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  },
+  {
+    "holding_id": "HOLD-PORT-INV-000010-03-INS-000070",
+    "portfolio_id": "PORT-INV-000010-03",
+    "instrument_id": "INS-000070",
+    "quantity": 41.0,
+    "cost_basis_per_share": 127.03,
+    "as_of_date": "2025-02-12",
+    "last_updated_at": "2025-12-31T16:00:00Z"
+  }
+]
