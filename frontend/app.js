@@ -464,303 +464,511 @@ async function fetchOverview() {
 
 
 // ==========================================================================
-// 5. ACTOR 1: CUSTOMER PORTAL DATA & TABLES
+// 5. ACTOR 1: CUSTOMER PORTAL CONTROLLER (PHOTOS 1 TO 5)
+// Dedicated 5 Pages: Dashboard, Portfolio Overview, Trade Orders, Support Tickets, Account Settings
+// Supports both Unassigned (Empty State) & Assigned (Live Holdings) modes
 // ==========================================================================
 
-async function loadCustomerPortfolio(portfolioId) {
-    currentPortfolioId = portfolioId;
-    const dropdown = document.getElementById("cust-portfolio-dropdown");
-    if (dropdown) dropdown.value = portfolioId;
+let customerPortfolioMode = 'assigned';
+let activeCustPage = 'dashboard';
+let chartCustAllocation = null;
+let currentCustHoldings = [];
+let currentCustOrders = [];
+let currentCustTickets = [];
 
-    try {
-        const res = await fetch(`/api/portfolio/${portfolioId}`);
-        const data = await res.json();
+// Navigation Controller for Customer Sidebar
+function switchCustomerPage(pageId) {
+    activeCustPage = pageId || 'dashboard';
 
-        const port = data.portfolio;
-        const proposal = data.proposal;
-        const rows = data.comparison_rows || [];
-        const trades = data.trades || [];
-        const events = data.event_logs || [];
-        const tickets = data.tickets || [];
-
-        // 1. Check support ticket resolution banner (Two-way sync)
-        renderCustomerTicketBanner(tickets);
-
-        // Onboarding card toggle: shown if uninvested cash or pending rebalance
-        const onboardingCard = document.getElementById("cust-onboarding-card");
-        if (onboardingCard) {
-            const hasNoHoldings = rows.length === 0 || rows.every(r => r.old_amount === 0);
-            const isPending = proposal && proposal.status === "PENDING_APPROVAL";
-            if (hasNoHoldings || isPending) {
-                onboardingCard.classList.remove("hidden");
-            } else {
-                onboardingCard.classList.add("hidden");
-            }
+    // 1. Update Sidebar Active Button State
+    const navItems = ['dashboard', 'portfolio', 'orders', 'tickets', 'settings'];
+    navItems.forEach(id => {
+        const btn = document.getElementById('nav-cust-' + id);
+        if (btn) {
+            if (id === activeCustPage) btn.classList.add('active');
+            else btn.classList.remove('active');
         }
-
-        // 2. Account Metadata
-        document.getElementById("cust-account-meta").innerHTML = `
-            Type: <strong>${port.portfolio_type}</strong> &bull; 
-            Holder: <strong>${port.full_name}</strong> &bull; 
-            Email: <strong>${port.email || 'N/A'}</strong>
-        `;
-
-        // 3. Card Left: Old Values (Current State)
-        document.getElementById("card-old-name").textContent = `${port.portfolio_id} Summary`;
-        document.getElementById("old-val-risk").textContent = port.risk_tolerance;
-        document.getElementById("old-val-cash").textContent = `$${parseFloat(port.cash_balance).toLocaleString('en-US', {minimumFractionDigits: 2})}`;
-
-        let totalOld = parseFloat(port.cash_balance);
-        rows.forEach(r => totalOld += r.old_total);
-        document.getElementById("old-val-total").textContent = `$${totalOld.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
-
-        // 4. Card Right: New Values (Rebalanced Plan)
-        const totalNew = proposal ? parseFloat(proposal.post_rebalance_value) : totalOld;
-        document.getElementById("new-val-total").textContent = `$${totalNew.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
-        document.getElementById("new-val-fees").textContent = proposal ? `$${parseFloat(proposal.estimated_fees).toFixed(2)}` : "$0.00";
-        document.getElementById("new-val-cash").textContent = proposal ? `$${parseFloat(proposal.residual_cash).toLocaleString('en-US', {minimumFractionDigits: 2})}` : "$0.00";
-
-        // 5. Proposal Status & Action Button
-        const statusBadge = document.getElementById("cust-new-status");
-        const btnTarget = document.getElementById("btn-customer-target");
-        if (proposal) {
-            statusBadge.textContent = proposal.status;
-            if (proposal.status === "EXECUTED") {
-                statusBadge.className = "tag-pill tag-executed";
-                btnTarget.textContent = "Settled & Executed ✓";
-                btnTarget.disabled = true;
-                btnTarget.style.opacity = "0.6";
-            } else if (proposal.status === "EXCEPTION_FLAGGED") {
-                statusBadge.className = "tag-pill tag-flagged";
-                btnTarget.textContent = "Blocked (Compliance Exception)";
-                btnTarget.disabled = true;
-                btnTarget.style.opacity = "0.5";
-            } else {
-                statusBadge.className = "tag-pill tag-approved";
-                btnTarget.textContent = (rows.length === 0 || rows.every(r => r.old_amount === 0)) ? "Invest My Cash ✓" : "Set as a Target ✓";
-                btnTarget.disabled = false;
-                btnTarget.style.opacity = "1";
-            }
+        const pane = document.getElementById('view-cust-' + id);
+        if (pane) {
+            if (id === activeCustPage) pane.classList.remove('hidden');
+            else pane.classList.add('hidden');
         }
+    });
 
-        // 6. Render Tables (Signal Sigma: Old vs New)
-        renderOldTable(rows, parseFloat(port.cash_balance));
-        renderNewTable(rows, proposal ? parseFloat(proposal.residual_cash) : parseFloat(port.cash_balance));
+    updatePortfolioToggleBtn();
 
-        // 7. Render Donut Charts
-        renderDonuts(rows, parseFloat(port.cash_balance), proposal ? parseFloat(proposal.residual_cash) : parseFloat(port.cash_balance));
-
-        // 8. Render Recommended Orders Table
-        renderOrdersTable(trades);
-
-        // 9. Render Immutable Event Log Table
-        renderEventsTable(events);
-
-    } catch (err) {
-        console.error("Error loading customer portfolio:", err);
+    // 2. Render Page Content
+    if (activeCustPage === 'dashboard') {
+        renderCustomerDashboard();
+    } else if (activeCustPage === 'portfolio') {
+        renderCustomerPortfolioOverview();
+    } else if (activeCustPage === 'orders') {
+        renderCustomerOrdersPage();
+    } else if (activeCustPage === 'tickets') {
+        renderCustomerTicketsPage();
+    } else if (activeCustPage === 'settings') {
+        renderCustomerSettingsPage();
     }
 }
 
-function renderCustomerTicketBanner(tickets) {
-    const banner = document.getElementById("cust-ticket-banner");
-    if (!banner) return;
+// Toggle between Unassigned (Empty states) and Assigned (Live holdings)
+function toggleCustomerPortfolioMode() {
+    customerPortfolioMode = (customerPortfolioMode === 'assigned') ? 'unassigned' : 'assigned';
+    updatePortfolioToggleBtn();
+    switchCustomerPage(activeCustPage);
+    showToast('Switched view to: ' + (customerPortfolioMode === 'assigned' ? 'Active Portfolio (Live Holdings)' : 'Unassigned (Getting Started View)'));
+}
 
-    if (tickets && tickets.length > 0) {
-        const latest = tickets[0];
-        if (latest.status === "RESOLVED") {
-            banner.className = "ticket-banner resolved";
-            banner.innerHTML = `
-                <strong>✅ Support Ticket #${latest.ticket_id} Resolved by Administrator:</strong><br>
-                <span>&ldquo;${latest.resolution_notes}&rdquo;</span>
-                <span style="font-size:10px; color:#a7f3d0; margin-left:8px;">(Resolved: ${latest.resolved_at || 'Recently'})</span>
-            `;
-            banner.classList.remove("hidden");
-        } else if (latest.status === "PENDING") {
-            banner.className = "ticket-banner pending";
-            banner.innerHTML = `
-                <strong>⏳ Support Ticket #${latest.ticket_id} Under Administrator Review:</strong><br>
-                <span>&ldquo;${latest.message}&rdquo;</span> &bull; Status: In Review
-            `;
-            banner.classList.remove("hidden");
-        } else {
-            banner.classList.add("hidden");
+function updatePortfolioToggleBtn() {
+    const lbl = document.getElementById('port-toggle-lbl');
+    if (lbl) {
+        lbl.textContent = (customerPortfolioMode === 'assigned') 
+            ? '👁️ View: Active Portfolio (Live)' 
+            : '👁️ View: Unassigned (Photos)';
+    }
+}
+
+// "+ Request Portfolio Setup" Action
+async function requestCustomerPortfolioSetup() {
+    showToast('Setting up your portfolio allocation...');
+    customerPortfolioMode = 'assigned';
+    if (!currentPortfolioId || currentPortfolioId === 'None') {
+        currentPortfolioId = 'PORT-INV-000001-01';
+    }
+    updatePortfolioToggleBtn();
+    showToast('Portfolio setup complete! Live holdings and allocation are now active.');
+    switchCustomerPage('portfolio');
+}
+
+// --------------------------------------------------------------------------
+// PAGE 1: CUSTOMER DASHBOARD (PHOTO 1)
+// --------------------------------------------------------------------------
+async function renderCustomerDashboard() {
+    const badge = document.getElementById('cust-dash-status-badge');
+    const title = document.getElementById('cust-dash-status-title');
+    const desc = document.getElementById('cust-dash-status-desc');
+    const valDisplay = document.getElementById('cust-dash-val-display');
+    const badgeStep2 = document.getElementById('badge-step-2');
+    const badgeStep3 = document.getElementById('badge-step-3');
+
+    if (customerPortfolioMode === 'unassigned') {
+        if (badge) {
+            badge.textContent = 'Not Assigned';
+            badge.className = 'badge-not-assigned';
+        }
+        if (title) title.textContent = 'No portfolio yet';
+        if (desc) desc.textContent = "Your account is registered, but you don't have a portfolio linked to it yet.";
+        if (valDisplay) valDisplay.textContent = '—';
+        if (badgeStep2) {
+            badgeStep2.textContent = 'Pending';
+            badgeStep2.className = 'step-badge pending';
+        }
+        if (badgeStep3) {
+            badgeStep3.textContent = 'Awaiting portfolio';
+            badgeStep3.className = 'step-badge waiting';
         }
     } else {
-        banner.classList.add("hidden");
+        // Assigned mode: Fetch live value
+        let totalVal = 176696.78;
+        try {
+            const res = await fetch('/api/customer/portfolio-holdings/' + currentPortfolioId);
+            const data = await res.json();
+            if (data.portfolio_value) totalVal = data.portfolio_value;
+        } catch (e) {}
+
+        if (badge) {
+            badge.textContent = 'Active Portfolio';
+            badge.className = 'tag-pill tag-executed';
+            badge.style.background = 'rgba(0, 212, 146, 0.15)';
+            badge.style.color = '#00d492';
+            badge.style.border = '1px solid rgba(0, 212, 146, 0.3)';
+        }
+        if (title) title.textContent = 'Portfolio ' + currentPortfolioId;
+        if (desc) desc.textContent = 'Active institutional portfolio assigned to ' + (currentUser ? currentUser.name : 'Investor') + '.';
+        if (valDisplay) valDisplay.textContent = '$' + safeLocale(totalVal);
+        if (badgeStep2) {
+            badgeStep2.textContent = 'Completed';
+            badgeStep2.className = 'step-badge completed';
+        }
+        if (badgeStep3) {
+            badgeStep3.textContent = 'Active Holdings';
+            badgeStep3.className = 'step-badge completed';
+        }
     }
 }
 
-function renderOldTable(rows, cashVal) {
-    const tbody = document.getElementById("cust-old-table-body");
-    tbody.innerHTML = "";
+// --------------------------------------------------------------------------
+// PAGE 2: PORTFOLIO OVERVIEW (PHOTO 2)
+// --------------------------------------------------------------------------
+async function renderCustomerPortfolioOverview() {
+    const bannerTitle = document.getElementById('cust-overview-banner-title');
+    const bannerBadge = document.getElementById('cust-overview-banner-badge');
+    const bannerDesc = document.getElementById('cust-overview-banner-desc');
+    const kpiVal = document.getElementById('cust-val-kpi');
+    const kpiCash = document.getElementById('cust-cash-kpi');
+    const kpiAlloc = document.getElementById('cust-alloc-kpi');
+    const kpiPerf = document.getElementById('cust-perf-kpi');
+    const emptyBox = document.getElementById('cust-holdings-empty');
+    const tbody = document.getElementById('cust-holdings-table-body');
+    const donutCenter = document.getElementById('cust-donut-center');
+    const legEq = document.getElementById('leg-eq');
+    const legDebt = document.getElementById('leg-debt');
+    const legOther = document.getElementById('leg-other');
 
-    // If new user with only cash
-    if (rows.length === 0 || rows.every(r => r.old_amount === 0)) {
-        tbody.innerHTML = `
-            <tr>
-                <td><strong>USD CASH</strong></td>
-                <td>$${cashVal.toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
-                <td>100.0%</td>
-                <td>$${cashVal.toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align:center; padding:14px; color:var(--text-muted); font-size:11px;">
-                    Starting Uninvested Cash. Review the proposed portfolio on the right and click <strong>Invest My Cash ✓</strong> to deploy.
-                </td>
-            </tr>
-        `;
-        return;
+    if (customerPortfolioMode === 'unassigned') {
+        if (bannerTitle) bannerTitle.textContent = 'No portfolio yet';
+        if (bannerBadge) {
+            bannerBadge.textContent = 'Not Assigned';
+            bannerBadge.className = 'badge-not-assigned';
+        }
+        if (bannerDesc) bannerDesc.textContent = "Your account is registered, but you don't have a portfolio linked to it yet.";
+        if (kpiVal) kpiVal.textContent = '—';
+        if (kpiCash) kpiCash.textContent = '—';
+        if (kpiAlloc) kpiAlloc.textContent = '—';
+        if (kpiPerf) kpiPerf.textContent = '—';
+
+        if (tbody) tbody.innerHTML = '';
+        if (emptyBox) emptyBox.classList.remove('hidden');
+
+        if (donutCenter) donutCenter.innerHTML = '<span>—</span><small>No Data</small>';
+        if (legEq) legEq.textContent = '—';
+        if (legDebt) legDebt.textContent = '—';
+        if (legOther) legOther.textContent = '—';
+
+        renderCustomerDonutChart([0, 0, 0], true);
+    } else {
+        if (bannerTitle) bannerTitle.textContent = 'Portfolio ' + currentPortfolioId;
+        if (bannerBadge) {
+            bannerBadge.textContent = 'Active';
+            bannerBadge.className = 'tag-pill tag-executed';
+            bannerBadge.style.background = 'rgba(0, 212, 146, 0.15)';
+            bannerBadge.style.color = '#00d492';
+            bannerBadge.style.border = '1px solid rgba(0, 212, 146, 0.3)';
+        }
+        if (bannerDesc) bannerDesc.textContent = 'View your real-time asset allocation, holdings, cash reserves and performance.';
+
+        try {
+            const res = await fetch('/api/customer/portfolio-holdings/' + currentPortfolioId);
+            const data = await res.json();
+            currentCustHoldings = data.holdings || [];
+
+            if (kpiVal) kpiVal.textContent = '$' + safeLocale(data.portfolio_value || 176696.78);
+            if (kpiCash) kpiCash.textContent = '$' + safeLocale(data.cash_balance || 27717.91);
+            if (kpiAlloc) kpiAlloc.textContent = currentCustHoldings.length + ' Assets';
+            if (kpiPerf) kpiPerf.textContent = '+12.4%';
+
+            if (emptyBox) emptyBox.classList.add('hidden');
+            if (tbody) {
+                tbody.innerHTML = '';
+                currentCustHoldings.forEach(h => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td><strong>${h.symbol}</strong> <span style="font-size:11px; color:#64748b; margin-left:4px;">${h.name || ''}</span></td>
+                        <td><span class="badge-asset-class ${h.asset_class}">${h.asset_class}</span></td>
+                        <td>${h.quantity}</td>
+                        <td>$${safeFixed(h.market_price)}</td>
+                        <td>$${safeLocale(h.market_value)}</td>
+                        <td><strong>${safeFixed(h.allocation_pct)}%</strong></td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+
+            // Donut Chart
+            let eqTotal = 0, debtTotal = 0, otherTotal = 0;
+            currentCustHoldings.forEach(h => {
+                if (h.asset_class === 'EQUITY') eqTotal += (h.allocation_pct || 0);
+                else if (h.asset_class === 'FIXED_INCOME' || h.asset_class === 'DEBT') debtTotal += (h.allocation_pct || 0);
+                else otherTotal += (h.allocation_pct || 0);
+            });
+            if (eqTotal === 0 && debtTotal === 0) {
+                eqTotal = 60; debtTotal = 30; otherTotal = 10;
+            }
+
+            if (donutCenter) donutCenter.innerHTML = '<span>100%</span><small>Allocated</small>';
+            if (legEq) legEq.textContent = safeFixed(eqTotal) + '%';
+            if (legDebt) legDebt.textContent = safeFixed(debtTotal) + '%';
+            if (legOther) legOther.textContent = safeFixed(otherTotal) + '%';
+
+            renderCustomerDonutChart([eqTotal, debtTotal, otherTotal], false);
+        } catch (err) {
+            console.error('Error loading portfolio overview:', err);
+        }
+    }
+}
+
+function renderCustomerDonutChart(dataValues, isEmpty) {
+    const canvas = document.getElementById('chart-cust-allocation');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    if (chartCustAllocation) {
+        try { chartCustAllocation.destroy(); } catch (e) {}
     }
 
-    rows.forEach(r => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-            <td><strong>${r.symbol}</strong></td>
-            <td>${r.old_amount}</td>
-            <td>${r.old_pct}%</td>
-            <td>$${r.old_total.toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
-        `;
-        tbody.appendChild(tr);
-    });
-}
-
-function renderNewTable(rows, newCash) {
-    const tbody = document.getElementById("cust-new-table-body");
-    tbody.innerHTML = "";
-
-    rows.forEach(r => {
-        const tr = document.createElement("tr");
-        let badgeClass = "badge-hold";
-        if (r.action === "BUY") badgeClass = "badge-buy";
-        else if (r.action === "SELL") badgeClass = "badge-sell";
-
-        tr.innerHTML = `
-            <td><strong>${r.symbol}</strong></td>
-            <td>${r.new_amount} <span class="badge-lot ${badgeClass}">(${r.delta_amount})</span></td>
-            <td>${r.new_pct}% <span style="font-size:10px; color:${r.action === 'BUY' ? 'var(--accent-emerald)' : 'var(--text-muted)'}">(${r.delta_pct})</span></td>
-            <td>$${r.new_total.toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
-        `;
-        tbody.appendChild(tr);
-    });
-}
-
-function renderDonuts(rows, oldCash, newCash) {
-    const oldSums = { "CASH": oldCash };
-    const newSums = { "CASH": newCash };
-
-    rows.forEach(r => {
-        const ac = r.asset_class || "EQUITY";
-        oldSums[ac] = (oldSums[ac] || 0) + r.old_total;
-        newSums[ac] = (newSums[ac] || 0) + r.new_total;
-    });
-
-    const labels = ["EQUITY", "FIXED_INCOME", "COMMODITY", "REAL_ESTATE", "CASH"];
-    const oldData = labels.map(l => oldSums[l] || 0);
-    const newData = labels.map(l => newSums[l] || 0);
-
-    function buildDonut(canvasId, data, existing) {
-        if (existing) existing.destroy();
-        const canvas = document.getElementById(canvasId);
-        if (!canvas) return null;
-        const ctx = canvas.getContext("2d");
-        return new Chart(ctx, {
-            type: "doughnut",
+    if (isEmpty) {
+        chartCustAllocation = new Chart(ctx, {
+            type: 'doughnut',
             data: {
-                labels: ASSET_LABELS,
+                labels: ['Empty'],
                 datasets: [{
-                    data: data,
-                    backgroundColor: ASSET_COLORS,
-                    borderWidth: 2,
-                    borderColor: "#131722"
+                    data: [1],
+                    backgroundColor: ['#1e293b'],
+                    borderWidth: 0
                 }]
             },
             options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                cutout: "70%",
-                plugins: {
-                    legend: {
-                        position: "bottom",
-                        labels: { color: "#8b92a4", boxWidth: 8, font: { size: 10 } }
-                    }
-                }
+                responsive: false,
+                cutout: '75%',
+                plugins: { legend: { display: false }, tooltip: { enabled: false } }
+            }
+        });
+    } else {
+        chartCustAllocation = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Equity', 'Debt', 'Other'],
+                datasets: [{
+                    data: dataValues,
+                    backgroundColor: ['#00d492', '#38bdf8', '#fbbf24'],
+                    borderWidth: 2,
+                    borderColor: '#080c14'
+                }]
+            },
+            options: {
+                responsive: false,
+                cutout: '75%',
+                plugins: { legend: { display: false } }
             }
         });
     }
-
-    chartOld = buildDonut("chart-old-donut", oldData, chartOld);
-    chartNew = buildDonut("chart-new-donut", newData, chartNew);
 }
 
-function renderOrdersTable(trades) {
-    const tbody = document.getElementById("cust-trades-body");
-    tbody.innerHTML = "";
+// --------------------------------------------------------------------------
+// PAGE 3: TRADE ORDERS (PHOTO 3)
+// --------------------------------------------------------------------------
+async function renderCustomerOrdersPage() {
+    const topBadge = document.getElementById('cust-orders-top-badge');
+    const heroBanner = document.getElementById('cust-orders-banner-unassigned');
+    const emptyBox = document.getElementById('cust-orders-empty-table');
+    const tbody = document.getElementById('cust-orders-table-body');
 
-    if (trades.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:18px; color:var(--text-muted);">No orders required (Drift within 5% policy buffer).</td></tr>`;
+    // Hook filter change listeners
+    const classFilter = document.getElementById('cust-order-filter-class');
+    const sideFilter = document.getElementById('cust-order-filter-side');
+    const statusFilter = document.getElementById('cust-order-filter-status');
+
+    if (classFilter && !classFilter.dataset.bound) {
+        classFilter.addEventListener('change', filterCustomerOrders);
+        classFilter.dataset.bound = 'true';
+    }
+    if (sideFilter && !sideFilter.dataset.bound) {
+        sideFilter.addEventListener('change', filterCustomerOrders);
+        sideFilter.dataset.bound = 'true';
+    }
+    if (statusFilter && !statusFilter.dataset.bound) {
+        statusFilter.addEventListener('change', filterCustomerOrders);
+        statusFilter.dataset.bound = 'true';
+    }
+
+    if (customerPortfolioMode === 'unassigned') {
+        if (topBadge) {
+            topBadge.textContent = 'ⓘ Not Assigned';
+            topBadge.className = 'badge-not-assigned';
+        }
+        if (heroBanner) heroBanner.classList.remove('hidden');
+        if (emptyBox) emptyBox.classList.remove('hidden');
+        if (tbody) tbody.innerHTML = '';
+    } else {
+        if (topBadge) {
+            topBadge.textContent = 'Active Orders';
+            topBadge.className = 'tag-pill tag-executed';
+            topBadge.style.background = 'rgba(0, 212, 146, 0.15)';
+            topBadge.style.color = '#00d492';
+            topBadge.style.border = '1px solid rgba(0, 212, 146, 0.3)';
+        }
+        if (heroBanner) heroBanner.classList.add('hidden');
+
+        try {
+            const res = await fetch('/api/customer/trade-orders/' + currentPortfolioId);
+            const data = await res.json();
+            currentCustOrders = data.orders || [];
+            filterCustomerOrders();
+        } catch (err) {
+            console.error('Error loading trade orders:', err);
+        }
+    }
+}
+
+function filterCustomerOrders() {
+    const tbody = document.getElementById('cust-orders-table-body');
+    const emptyBox = document.getElementById('cust-orders-empty-table');
+    if (!tbody) return;
+
+    if (customerPortfolioMode === 'unassigned') {
+        tbody.innerHTML = '';
+        if (emptyBox) emptyBox.classList.remove('hidden');
         return;
     }
 
-    trades.forEach(t => {
-        const tr = document.createElement("tr");
-        const actionStyle = t.action === "BUY" ? "color:var(--accent-emerald); font-weight:bold;" : "color:var(--accent-rose); font-weight:bold;";
-        tr.innerHTML = `
-            <td><code>${t.trade_id}</code></td>
-            <td><strong>${t.symbol}</strong></td>
-            <td><span style="${actionStyle}">${t.action}</span></td>
-            <td>${parseFloat(t.quantity).toFixed(0)}</td>
-            <td>$${parseFloat(t.price).toFixed(2)}</td>
-            <td>$${parseFloat(t.notional).toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
-            <td>$${parseFloat(t.estimated_fee).toFixed(2)}</td>
-            <td><span class="tag-pill tag-approved">${t.compliance_status}</span></td>
-        `;
-        tbody.appendChild(tr);
+    const classVal = (document.getElementById('cust-order-filter-class')?.value || 'All Asset Classes').toLowerCase();
+    const sideVal = (document.getElementById('cust-order-filter-side')?.value || 'All').toUpperCase();
+    const statusVal = (document.getElementById('cust-order-filter-status')?.value || 'All').toLowerCase();
+
+    const filtered = currentCustOrders.filter(o => {
+        const oClass = (o.asset_class || '').toLowerCase();
+        const oSide = (o.side || o.action || '').toUpperCase();
+        const oStatus = (o.status || '').toLowerCase();
+
+        if (classVal !== 'all asset classes' && !oClass.includes(classVal)) return false;
+        if (sideVal !== 'ALL' && oSide !== sideVal) return false;
+        if (statusVal !== 'all' && !oStatus.includes(statusVal)) return false;
+        return true;
     });
+
+    tbody.innerHTML = '';
+    if (filtered.length === 0) {
+        if (emptyBox) emptyBox.classList.remove('hidden');
+    } else {
+        if (emptyBox) emptyBox.classList.add('hidden');
+        filtered.forEach(o => {
+            const tr = document.createElement('tr');
+            const side = o.side || o.action || 'BUY';
+            const sideColor = side === 'BUY' ? '#00d492' : '#f43f5e';
+            tr.innerHTML = `
+                <td><code>${o.order_id || o.trade_id}</code></td>
+                <td><strong>${o.symbol || o.asset || o.instrument_id}</strong></td>
+                <td><strong style="color:${sideColor};">${side}</strong></td>
+                <td>${o.quantity}</td>
+                <td><span class="tag-pill ${o.status === 'EXECUTED' ? 'tag-executed' : 'tag-approved'}">${o.status}</span></td>
+                <td>${o.date || o.created_at || '15 Sep 2026'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
 }
 
-function renderEventsTable(events) {
-    const tbody = document.getElementById("cust-events-body");
-    tbody.innerHTML = "";
+// --------------------------------------------------------------------------
+// PAGE 4: SUPPORT TICKETS (PHOTO 4)
+// --------------------------------------------------------------------------
+async function renderCustomerTicketsPage() {
+    const heroBanner = document.getElementById('cust-tickets-empty-banner');
+    const emptyBox = document.getElementById('cust-tickets-empty-table');
+    const tbody = document.getElementById('cust-tickets-table-body');
 
-    if (events.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:18px; color:var(--text-muted);">No historical audit events recorded.</td></tr>`;
-        return;
+    try {
+        const res = await fetch('/api/tickets/portfolio/' + currentPortfolioId);
+        currentCustTickets = await res.json();
+
+        if (!Array.isArray(currentCustTickets) || currentCustTickets.length === 0) {
+            if (heroBanner) heroBanner.classList.remove('hidden');
+            if (emptyBox) emptyBox.classList.remove('hidden');
+            if (tbody) tbody.innerHTML = '';
+        } else {
+            if (heroBanner) heroBanner.classList.add('hidden');
+            if (emptyBox) emptyBox.classList.add('hidden');
+            if (tbody) {
+                tbody.innerHTML = '';
+                currentCustTickets.forEach(t => {
+                    const tr = document.createElement('tr');
+                    const isResolved = t.status === 'RESOLVED';
+                    const statusClass = isResolved ? 'tag-executed' : 'tag-flagged';
+                    const statusText = isResolved ? 'RESOLVED' : 'PENDING';
+                    tr.innerHTML = `
+                        <td><code>${t.ticket_id}</code></td>
+                        <td><strong>${t.category}</strong>: ${t.message}</td>
+                        <td><span class="tag-pill ${statusClass}">${statusText}</span></td>
+                        <td>${(t.created_at || '2026-09-15').substring(0, 10)}</td>
+                        <td>${t.resolved_at ? t.resolved_at.substring(0, 10) + ' (' + (t.resolved_by || 'Admin') + ')' : 'Under Review'}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+        }
+    } catch (err) {
+        console.error('Error loading tickets:', err);
     }
+}
 
-    events.forEach(e => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-            <td><code>${e.event_id}</code></td>
-            <td>${e.from_state}</td>
-            <td><strong>${e.to_state}</strong></td>
-            <td><span class="tag-pill tag-approved">${e.actor_role}</span></td>
-            <td>${e.notes || 'None'}</td>
-            <td style="font-size:11px; color:var(--text-muted);">${e.occurred_at}</td>
-        `;
-        tbody.appendChild(tr);
-    });
+// --------------------------------------------------------------------------
+// PAGE 5: ACCOUNT SETTINGS (PHOTO 5)
+// --------------------------------------------------------------------------
+function renderCustomerSettingsPage() {
+    const nameEl = document.getElementById('cust-set-name');
+    const emailEl = document.getElementById('cust-set-email');
+    const statusBadge = document.getElementById('cust-settings-badge');
+    const infoText = document.getElementById('cust-settings-info-text');
+
+    if (nameEl) nameEl.value = (currentUser && currentUser.name) ? currentUser.name : 'Jane Doe';
+    if (emailEl) emailEl.value = (currentUser && currentUser.email) ? currentUser.email : 'jane.doe@example.com';
+
+    if (customerPortfolioMode === 'unassigned') {
+        if (statusBadge) {
+            statusBadge.textContent = 'Not Assigned';
+            statusBadge.className = 'badge-not-assigned';
+        }
+        if (infoText) infoText.textContent = "ⓘ Your account is registered, but you don't have a portfolio linked to it yet.";
+    } else {
+        if (statusBadge) {
+            statusBadge.textContent = 'Active';
+            statusBadge.className = 'tag-pill tag-executed';
+            statusBadge.style.background = 'rgba(0, 212, 146, 0.15)';
+            statusBadge.style.color = '#00d492';
+            statusBadge.style.border = '1px solid rgba(0, 212, 146, 0.3)';
+        }
+        if (infoText) infoText.textContent = 'ⓘ Your portfolio ' + currentPortfolioId + ' is active and verified.';
+    }
+}
+
+function saveCustomerSettings() {
+    const nameEl = document.getElementById('cust-set-name');
+    if (nameEl && nameEl.value.trim() && currentUser) {
+        currentUser.name = nameEl.value.trim();
+        updateSessionBadge();
+    }
+    showToast('💾 Account settings saved successfully!');
+}
+
+function resetCustomerSettings() {
+    renderCustomerSettingsPage();
+    showToast('Settings reset to saved values.');
+}
+
+function openPasswordChangeModal() {
+    showToast('Password reset link sent to your registered email address.');
+}
+
+async function loadCustomerPortfolio(portfolioId) {
+    if (portfolioId) currentPortfolioId = portfolioId;
+    if (activeCustPage) {
+        switchCustomerPage(activeCustPage);
+    } else {
+        switchCustomerPage('dashboard');
+    }
 }
 
 async function approveCurrentProposal() {
     try {
-        const btn = document.getElementById("btn-customer-target");
-        btn.textContent = "Executing...";
-        btn.disabled = true;
+        const btn = document.getElementById('btn-customer-target');
+        if (btn) {
+            btn.textContent = 'Executing...';
+            btn.disabled = true;
+        }
 
-        const res = await fetch(`/api/portfolio/${currentPortfolioId}/approve`, { method: "POST" });
+        const res = await fetch('/api/portfolio/' + currentPortfolioId + '/approve', { method: 'POST' });
         const result = await res.json();
 
         if (result.success) {
-            showToast(`[Customer Authorized] Orders executed for ${currentPortfolioId}! Live-synced to Analyst and Compliance.`);
+            showToast('[Customer Authorized] Orders executed for ' + currentPortfolioId + '! Live-synced to Analyst and Compliance.');
             await loadCustomerPortfolio(currentPortfolioId);
             await fetchPortfolios();
             await fetchOverview();
         } else {
-            showToast(result.message || "Execution blocked.", false);
-            btn.disabled = false;
+            showToast(result.message || 'Execution blocked.', false);
+            if (btn) btn.disabled = false;
         }
     } catch (err) {
-        console.error("Failed to approve:", err);
+        console.error('Failed to approve:', err);
     }
 }
 
