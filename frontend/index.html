@@ -426,66 +426,14 @@
                     </div>
                 </div>
 
-                <!-- Center Active Actor Badge -->
-                <div class="header-center-info">
-                    <span id="header-actor-badge" class="header-actor-pill">Customer Portal</span>
-                </div>
+                <!-- Center Header -->
+                <div class="header-center-info"></div>
 
-                <!-- Header Right: Date, Notifications, User Profile, Role Badge, Help & Logout -->
+                <!-- Header Right: Profile Badge, Help & Logout -->
                 <div class="header-right flex-align-center gap-14">
-                    <div class="header-date-badge">📅 As of: 15 Sep 2026</div>
-
-                    <!-- Notification Bell Container with Dropdown -->
-                    <div class="header-bell-container" style="position:relative;">
-                        <button class="btn-header-bell" onclick="toggleNotificationsDropdown()" id="btn-header-bell" title="Notifications">
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-                            </svg>
-                            <span class="bell-badge-dot" id="bell-badge-dot"></span>
-                        </button>
-                        <!-- Notifications Dropdown -->
-                        <div id="notifications-dropdown" class="notifications-dropdown hidden">
-                            <div class="notif-dropdown-header flex-between">
-                                <strong style="color:#fff; font-size:13px;">System Notifications</strong>
-                                <button type="button" onclick="markNotificationsRead()" class="btn-mark-read">Mark all as read</button>
-                            </div>
-                            <div class="notif-dropdown-list">
-                                <div class="notif-item unread">
-                                    <div class="notif-icon-circle green">✓</div>
-                                    <div class="notif-body">
-                                        <div class="notif-title">Proposal Approved &amp; Simulated</div>
-                                        <p class="notif-desc">RB-2026-000127 was approved by Ramesh K and simulation completed.</p>
-                                        <span class="notif-time">Just now</span>
-                                    </div>
-                                </div>
-                                <div class="notif-item unread">
-                                    <div class="notif-icon-circle blue">⚖️</div>
-                                    <div class="notif-body">
-                                        <div class="notif-title">New Proposal Under Review</div>
-                                        <p class="notif-desc">Proposal RB-2026-000046 submitted to Risk &amp; Compliance queue.</p>
-                                        <span class="notif-time">15 mins ago</span>
-                                    </div>
-                                </div>
-                                <div class="notif-item">
-                                    <div class="notif-icon-circle amber">⚠️</div>
-                                    <div class="notif-body">
-                                        <div class="notif-title">Price Freshness Alert</div>
-                                        <p class="notif-desc">4 market price records exceed 3 days threshold. Automated warning flagged.</p>
-                                        <span class="notif-time">2 hours ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- User Profile & Assigned Role -->
-                    <div id="user-session-badge" class="user-session-pill">
-                        <div class="avatar-circle" id="session-avatar">JD</div>
-                        <div class="user-text-col">
-                            <span id="session-user-name" class="session-name">Jane Doe</span>
-                            <span id="session-user-role" class="session-role">Customer</span>
-                        </div>
+                    <div id="user-session-badge" class="user-session-pill" style="display:flex; align-items:center; gap:8px; padding:4px 12px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:20px;">
+                        <div class="avatar-circle" id="session-avatar" style="width:26px; height:26px; border-radius:50%; background:#00d492; color:#080c14; font-weight:700; font-size:11px; display:flex; align-items:center; justify-content:center;">OA</div>
+                        <span id="session-user-name" class="session-name" style="font-size:12.5px; font-weight:600; color:#ffffff;">Operational Analyst</span>
                     </div>
 
                     <!-- Help & Logout -->
@@ -754,9 +702,12 @@
                             <div class="cust-overview-bottom-grid">
                                 <!-- Holdings Card -->
                                 <div class="v-card holdings-card">
-                                    <div class="card-head flex-align-center gap-8">
-                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#00d492" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                                        <h4>Holdings</h4>
+                                    <div class="card-head flex-between">
+                                        <div class="flex-align-center gap-8">
+                                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#00d492" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                            <h4>Holdings</h4>
+                                        </div>
+                                        <button onclick="openCustomerOrderModal()" class="v-btn-primary" style="background:#00d492; color:#080c14; font-weight:700; font-size:12px; padding:6px 14px; border-radius:6px; cursor:pointer;">+ Buy / Sell Stock</button>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="v-table">
@@ -809,7 +760,7 @@
                         <!-- PAGE 3: TRADE ORDERS (IMAGE 3)                 -->
                         <!-- ============================================== -->
                         <div id="view-cust-orders" class="cust-view-pane hidden">
-                            <div class="pane-page-header">
+                            <div class="pane-page-header flex-between">
                                 <div class="flex-align-center gap-10">
                                     <div class="c-header-icon green">
                                         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#00d492" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
@@ -819,6 +770,7 @@
                                         <p>View and track your investment trade orders.</p>
                                     </div>
                                 </div>
+                                <button onclick="openCustomerOrderModal()" class="btn-create-ticket" style="background:#00d492; color:#0f172a; font-weight:700;">+ Place New Order</button>
                             </div>
 
                             <!-- Main Container Card (Image 3) -->
@@ -1200,25 +1152,8 @@
                         <!-- TOP HEADER STRIP -->
                         <header class="valtix-header flex-between">
                             <div>
-                                <div class="flex-align-center gap-10">
-                                    <span class="v-pill-role">Operations Analyst</span>
-                                </div>
                                 <h2 id="valtix-page-title" class="valtix-title">Dashboard</h2>
                                 <p id="valtix-page-subtitle" class="valtix-sub">Monitor portfolios, track rebalancing status, exceptions and proposal pipeline.</p>
-                            </div>
-                            <div class="flex-align-center gap-16">
-                                <div class="v-date-picker">📅 As of: 15 Sep 2026</div>
-                                <div class="v-bell-wrap" title="1 Notification Pending Review">
-                                    <span style="font-size:16px;">🔔</span>
-                                    <span class="v-bell-badge">1</span>
-                                </div>
-                                <div class="v-user-card">
-                                    <div class="v-avatar">👤</div>
-                                    <div>
-                                        <div class="v-user-name">Lakshmi T N</div>
-                                        <div class="v-user-role">Operations Analyst</div>
-                                    </div>
-                                </div>
                             </div>
                         </header>
 
@@ -1411,7 +1346,6 @@
                                             <button onclick="triggerBatchRebalance()" id="btn-batch-proposals" class="v-btn-primary">
                                                 ⚡ Generate Batch Proposals
                                             </button>
-                                            <button onclick="openNewProposalModal()" class="v-btn-outline">+ New Proposal</button>
                                             <button onclick="exportQueueCSV()" class="v-btn-outline">📥 Export</button>
                                         </div>
                                     </div>
@@ -1486,31 +1420,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Right Stack: Recent Activity + Top Exceptions -->
-                                <div class="v-right-stack">
-                                    <!-- Recent Proposal Activity -->
-                                    <div class="v-card">
-                                        <div class="card-head flex-between">
-                                            <h4>Recent Proposal Activity</h4>
-                                            <a href="javascript:void(0)" onclick="switchAnalystView('proposals')" class="v-link-sub">View All</a>
-                                        </div>
-                                        <div class="recent-activity-list" id="recent-activity-body">
-                                            <!-- Dynamic via fetchDashboardStats() -->
-                                        </div>
-                                    </div>
-
-                                    <!-- Top Exceptions -->
-                                    <div class="v-card">
-                                        <div class="card-head flex-between">
-                                            <h4>Top Exceptions <span id="top-exceptions-badge" class="badge-round">12</span></h4>
-                                            <a href="javascript:void(0)" onclick="switchActor('compliance')" class="v-link-sub">View All</a>
-                                        </div>
-                                        <div class="top-exceptions-list" id="top-exceptions-body">
-                                            <!-- Dynamic via fetchDashboardStats() -->
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -1536,37 +1445,38 @@
                                             <span class="search-icon">🔍</span>
                                             <input type="text" id="worklist-search" placeholder="Search by Portfolio ID / Account Holder" onkeyup="filterWorklist()">
                                         </div>
-                                        <div class="worklist-filter-row flex-align-center gap-8">
-                                            <select id="worklist-filter-risk" onchange="filterWorklist()" class="v-select-sm">
+                                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:8px;">
+                                            <select id="worklist-filter-risk" onchange="filterWorklist()" class="v-select-sm" style="width:100%; font-size:11px; padding:6px 4px;">
                                                 <option value="All">Risk: All</option>
                                                 <option value="Conservative">Conservative</option>
                                                 <option value="Moderate">Moderate</option>
                                                 <option value="Growth">Growth</option>
                                                 <option value="Aggressive">Aggressive</option>
                                             </select>
-                                            <select id="worklist-filter-status" onchange="filterWorklist()" class="v-select-sm">
+                                            <select id="worklist-filter-status" onchange="filterWorklist()" class="v-select-sm" style="width:100%; font-size:11px; padding:6px 4px;">
                                                 <option value="All">Status: All</option>
                                                 <option value="Approved">Approved</option>
                                                 <option value="Pending Review">Pending Review</option>
                                                 <option value="Exception">Exception</option>
                                                 <option value="Draft">Draft</option>
                                             </select>
-                                            <select id="worklist-filter-drift" onchange="filterWorklist()" class="v-select-sm">
+                                        </div>
+                                        <div style="margin-top:6px;">
+                                            <select id="worklist-filter-drift" onchange="filterWorklist()" class="v-select-sm" style="width:100%; font-size:11px; padding:6px 8px;">
                                                 <option value="All">Drift: All</option>
-                                                <option value="ge_5">Drift: ≥ 5%</option>
-                                                <option value="lt_5">Drift: &lt; 5%</option>
+                                                <option value="ge_5">Drift: ≥ 5% (Needs Rebalance)</option>
+                                                <option value="lt_5">Drift: &lt; 5% (Within Target)</option>
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="table-responsive worklist-table-scroll">
-                                        <table class="v-table compact">
+                                        <table class="v-table compact" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th style="width:24px;"><input type="checkbox"></th>
-                                                    <th>Portfolio ID</th>
-                                                    <th>Drift</th>
-                                                    <th>Status</th>
+                                                    <th style="width:52%;">Portfolio ID</th>
+                                                    <th style="width:24%; text-align:right;">Drift</th>
+                                                    <th style="width:24%; text-align:right;">Status</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="worklist-table-body">
@@ -1594,6 +1504,7 @@
                                                 <div class="flex-align-center gap-10">
                                                     <h3 id="det-port-id" class="port-id-title">PORT-INV-000001-01</h3>
                                                     <span id="det-risk-badge" class="badge-pill-cyan">Conservative</span>
+                                                    <span id="det-status-badge" class="badge-status-approved" style="margin-left:8px;">APPROVED</span>
                                                 </div>
                                                 <div class="port-holder-sub">
                                                     Account Holder: <strong id="det-holder-name">Alexander Sterling</strong> &bull; Risk Profile: <span id="det-holder-risk">Conservative</span>
@@ -1648,94 +1559,42 @@
                                         <button onclick="switchDetailTab('history')" id="tab-det-history" class="det-subtab">🕒 History</button>
                                     </div>
 
-                                    <!-- SUB-TAB CONTENT: OVERVIEW (IMAGE 2) -->
+                                    <!-- SUB-TAB CONTENT: OVERVIEW -->
                                     <div id="subpane-det-overview" class="subpane-content">
-                                        <!-- Top Row: Asset Allocation Bar Chart & Rebalancing Summary Box -->
-                                        <div class="overview-two-col mb-16">
-                                            <!-- Asset Allocation (Current vs Target) -->
-                                            <div class="v-card">
-                                                <div class="card-head flex-between">
-                                                    <h4>Asset Allocation (Current vs Target)</h4>
-                                                    <div class="flex-align-center gap-12" style="font-size:11px;">
-                                                        <span><span class="dot blue"></span> Current Allocation</span>
-                                                        <span><span class="dot green"></span> Target Allocation</span>
-                                                    </div>
-                                                </div>
-                                                <div class="bar-chart-wrap" style="height:210px;">
-                                                    <canvas id="chart-det-allocation"></canvas>
-                                                </div>
+                                        <!-- Top Section: Top Trade Recommendations Table (From the Starting!) -->
+                                        <div class="v-card mb-16">
+                                            <div class="card-head flex-between">
+                                                <h4>Top Trade Recommendations</h4>
+                                                <span class="v-link-sub" style="font-size:12px; color:#38bdf8; cursor:pointer;" onclick="switchDetailTab('recommendations')">View All Recommendations &rarr;</span>
                                             </div>
-
-                                            <!-- Rebalancing Summary Box -->
-                                            <div class="v-card">
-                                                <div class="card-head">
-                                                    <h4>Rebalancing Summary</h4>
-                                                </div>
-                                                <div class="rebalance-summary-list">
-                                                    <div class="summary-line">
-                                                        <span>🛒 Buy Trades</span>
-                                                        <strong id="det-sum-buys" class="text-green">2 &bull; $8,420.12</strong>
-                                                    </div>
-                                                    <div class="summary-line">
-                                                        <span>🛍️ Sell Trades</span>
-                                                        <strong id="det-sum-sells" class="text-rose">1 &bull; $6,971.41</strong>
-                                                    </div>
-                                                    <div class="summary-line">
-                                                        <span>⇄ Net Trade Value</span>
-                                                        <strong id="det-sum-net">$1,448.71</strong>
-                                                    </div>
-                                                    <div class="summary-line">
-                                                        <span>🏷️ Estimated Fees</span>
-                                                        <strong id="det-sum-fees">$24.75</strong>
-                                                    </div>
-                                                    <div class="summary-line">
-                                                        <span>🔄 Turnover</span>
-                                                        <strong id="det-sum-turnover">4.80%</strong>
-                                                    </div>
-                                                    <div class="summary-line">
-                                                        <span>🎯 Post-Rebalancing Drift</span>
-                                                        <strong id="det-sum-postdrift" class="text-green">0.05%</strong>
-                                                    </div>
-                                                </div>
+                                            <div class="table-responsive">
+                                                <table class="v-table compact" style="width:100%;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Instrument</th>
+                                                            <th>Asset Class</th>
+                                                            <th>Action</th>
+                                                            <th>Quantity</th>
+                                                            <th>Market Price</th>
+                                                            <th>Trade Value</th>
+                                                            <th>Est. Fee</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="det-recommendations-body">
+                                                        <!-- Dynamic -->
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
 
-                                        <!-- Bottom Row: Top Trade Recommendations & Validations Checklist -->
-                                        <div class="overview-two-col">
-                                            <!-- Top Trade Recommendations Table -->
-                                            <div class="v-card">
-                                                <div class="card-head">
-                                                    <h4>Top Trade Recommendations</h4>
-                                                </div>
-                                                <div class="table-responsive">
-                                                    <table class="v-table compact">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Instrument</th>
-                                                                <th>Asset Class</th>
-                                                                <th>Action</th>
-                                                                <th>Quantity</th>
-                                                                <th>Price</th>
-                                                                <th>Trade Value</th>
-                                                                <th>Est. Fee</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody id="det-recommendations-body">
-                                                            <!-- Dynamic -->
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                        <!-- Below Down: Pre-Trade Policy & Regulatory Validations -->
+                                        <div class="v-card mb-16">
+                                            <div class="card-head flex-between">
+                                                <h4>Pre-Trade Compliance &amp; Policy Validations</h4>
+                                                <span id="det-validations-pill" class="tag-pill tag-approved">Passed (7/8)</span>
                                             </div>
-
-                                            <!-- Validation & Exceptions (8 Compliance Checks) -->
-                                            <div class="v-card">
-                                                <div class="card-head flex-between">
-                                                    <h4>Validation &amp; Exceptions</h4>
-                                                    <span id="det-validations-pill" class="tag-pill tag-approved">Passed (7/8)</span>
-                                                </div>
-                                                <div class="validations-checklist" id="det-validations-body">
-                                                    <!-- Dynamic: 8 checks -->
-                                                </div>
+                                            <div class="validations-checklist" id="det-validations-body" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
+                                                <!-- Dynamic: 8 checks in clean 2x4 grid -->
                                             </div>
                                         </div>
                                     </div>
@@ -1757,6 +1616,18 @@
 
                                     <!-- SUB-TAB CONTENT: ALLOCATIONS -->
                                     <div id="subpane-det-allocations" class="subpane-content hidden">
+                                        <div class="v-card mb-16">
+                                            <div class="card-head flex-between">
+                                                <h4>Asset Allocation (Current vs Target)</h4>
+                                                <div class="flex-align-center gap-12" style="font-size:11px;">
+                                                    <span><span class="dot blue"></span> Current Allocation</span>
+                                                    <span><span class="dot green"></span> Target Allocation</span>
+                                                </div>
+                                            </div>
+                                            <div class="bar-chart-wrap" style="height:190px;">
+                                                <canvas id="chart-det-allocation"></canvas>
+                                            </div>
+                                        </div>
                                         <div class="v-card">
                                             <div class="card-head"><h4>Target Allocation vs Actual Breakdown</h4></div>
                                             <div class="table-responsive">
@@ -1808,23 +1679,20 @@
                                         </div>
                                     </div>
 
+                                    <!-- Live Action Feedback Banner (Immediate Confirmation for Calculation & Proposals) -->
+                                    <div id="analyst-action-feedback-banner" class="hidden mb-12" style="padding:12px 18px; border-radius:8px; font-size:13px; font-weight:600; display:flex; justify-content:space-between; align-items:center;"></div>
+
                                     <!-- BOTTOM WORKSPACE ACTION BAR -->
-                                    <div class="workspace-action-bar flex-between">
-                                        <button onclick="switchAnalystView('dashboard')" class="v-btn-outline">
+                                    <div class="workspace-action-bar flex-between" style="padding:14px 20px; border-top:1px solid rgba(255,255,255,0.08); background:#0d1527; border-radius:10px; margin-top:14px;">
+                                        <button onclick="switchAnalystView('dashboard')" class="v-btn-outline" style="cursor:pointer; padding:9px 18px; font-size:13px;">
                                             &larr; Back to Worklist
                                         </button>
-                                        <div class="flex-align-center gap-10">
-                                            <button onclick="runPortfolioCalculation()" id="btn-run-calc" class="v-btn-primary">
-                                                ▶ Run Calculation
+                                        <div class="flex-align-center gap-12">
+                                            <button onclick="runPortfolioCalculation()" id="btn-run-calc" class="v-btn-primary" style="background:#00d492; color:#080c14; font-weight:700; cursor:pointer; padding:10px 20px; font-size:13px; border:none; border-radius:6px; box-shadow:0 0 14px rgba(0,212,146,0.3);">
+                                                🔄 Calculate Drift
                                             </button>
-                                            <button onclick="runPortfolioCalculation()" class="v-btn-outline">
-                                                🔄 Recalculate
-                                            </button>
-                                            <button onclick="saveProposalAction('DRAFT')" class="v-btn-outline">
+                                            <button onclick="saveProposalAction('DRAFT')" id="btn-save-draft" class="v-btn-outline" style="cursor:pointer; padding:9px 18px; font-size:13px; border:1px solid #475569; color:#cbd5e1; border-radius:6px;">
                                                 💾 Save as Draft
-                                            </button>
-                                            <button onclick="saveProposalAction('PENDING_REVIEW')" id="btn-gen-prop" class="v-btn-primary">
-                                                ⚡ Generate Proposal
                                             </button>
                                         </div>
                                     </div>
@@ -1890,7 +1758,6 @@
                                 <div class="card-head flex-between">
                                     <h3>Proposal List</h3>
                                     <div class="flex-align-center gap-10">
-                                        <button onclick="switchAnalystView('rebalancing')" class="v-btn-primary">+ New Proposal</button>
                                         <button onclick="exportProposalsCSV()" class="v-btn-outline">📥 Export</button>
                                     </div>
                                 </div>
@@ -1935,7 +1802,6 @@
                                     <table class="v-table">
                                         <thead>
                                             <tr>
-                                                <th style="width:32px;"><input type="checkbox"></th>
                                                 <th>Proposal ID</th>
                                                 <th>Portfolio ID</th>
                                                 <th>Account Holder</th>
@@ -1945,7 +1811,6 @@
                                                 <th>Est. Fees</th>
                                                 <th>Turnover</th>
                                                 <th>Status</th>
-                                                <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody id="proposals-table-body">
@@ -2009,8 +1874,8 @@
                                     <div class="flex-align-center gap-10">
                                         <select id="hist-filter-action" onchange="fetchHistoryData()" class="v-select-sm">
                                             <option value="All">Action: All</option>
-                                            <option value="BUY">BUY Orders</option>
-                                            <option value="SELL">SELL Orders</option>
+                                            <option value="BUY">BUY</option>
+                                            <option value="SELL">SELL</option>
                                         </select>
                                         <button onclick="openRunSimulationModal()" class="v-btn-primary">▶ Run New Simulation</button>
                                     </div>
@@ -2143,20 +2008,8 @@
                         <!-- HEADER -->
                         <header class="valtix-header flex-between">
                             <div>
-                                <span class="v-pill-role">Risk &amp; Compliance Reviewer</span>
                                 <h2 id="comp-page-title" class="valtix-title">Dashboard</h2>
                                 <p id="comp-page-subtitle" class="valtix-sub">Review submitted proposals, ensure compliance and take action.</p>
-                            </div>
-                            <div class="flex-align-center gap-16">
-                                <div class="v-date-picker">📅 As of: 15 Sep 2026</div>
-                                <div class="v-bell-wrap" title="1 Notification"><span style="font-size:16px;">🔔</span><span class="v-bell-badge">1</span></div>
-                                <div class="v-user-card">
-                                    <div class="v-avatar" style="background:linear-gradient(135deg, #0ea5e9, #2563eb);">👤</div>
-                                    <div>
-                                        <div class="v-user-name">Ramesh K</div>
-                                        <div class="v-user-role">Risk &amp; Compliance Reviewer</div>
-                                    </div>
-                                </div>
                             </div>
                         </header>
 
@@ -2265,8 +2118,8 @@
                                         </div>
                                     </div>
                                     <div class="table-responsive worklist-table-scroll">
-                                        <table class="v-table compact">
-                                            <thead><tr><th style="width:24px;"><input type="checkbox"></th><th>Proposal ID</th><th>Trade Value</th></tr></thead>
+                                        <table class="v-table compact" style="width:100%;">
+                                            <thead><tr><th>Proposal ID</th><th style="text-align:right;">Trade Value</th></tr></thead>
                                             <tbody id="comp-review-worklist-body"></tbody>
                                         </table>
                                     </div>
@@ -2280,11 +2133,12 @@
                                             <div class="v-banner-icon">⚖️</div>
                                             <div>
                                                 <div class="flex-align-center gap-10">
-                                                    <h3 id="comp-rev-id" class="port-id-title">PROP-000158</h3>
-                                                    <span id="comp-rev-status-badge" class="badge-status-pending">Pending Review</span>
+                                                    <h3 id="comp-rev-id" class="port-id-title">—</h3>
+                                                    <span id="comp-rev-status-badge" class="badge-status-pending">PENDING REVIEW</span>
+                                                    <span id="comp-rev-risk-badge" class="badge-pill-cyan">Moderate</span>
                                                 </div>
                                                 <div class="port-holder-sub">
-                                                    Portfolio: <strong id="comp-rev-port">PORT-INV-000002-01</strong> &bull; Account Holder: <span id="comp-rev-holder">Sophia Vance</span> &bull; Risk: <span id="comp-rev-risk">Moderate</span>
+                                                    Portfolio: <strong id="comp-rev-port">—</strong> &bull; Account Holder: <span id="comp-rev-holder">—</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2331,7 +2185,7 @@
                                                 <textarea id="comp-decision-comments" rows="3" placeholder="Enter review comments (mandatory for Reject / Return for Changes)..." class="form-textarea" style="background:#080c14; border:1px solid rgba(255,255,255,0.12); color:#ffffff;"></textarea>
                                             </div>
                                             <div class="flex-between">
-                                                <span id="comp-decision-msg" style="font-size:12px; color:#94a3b8;">Reviewer: Ramesh K &bull; Strict segregation of duties enforced.</span>
+                                                <span id="comp-decision-msg" style="font-size:12px; color:#94a3b8;">Reviewer: Risk &amp; Compliance Reviewer &bull; Strict segregation of duties enforced.</span>
                                                 <div class="flex-align-center gap-10">
                                                     <button onclick="submitComplianceReviewAction('APPROVED')" id="btn-comp-approve" class="v-btn-primary" style="background:#10b981; color:#080c14;">✓ Approve</button>
                                                     <button onclick="submitComplianceReviewAction('RETURNED')" id="btn-comp-return" class="v-btn-outline" style="border-color:#f59e0b; color:#f59e0b;">🔄 Return for Changes</button>
@@ -2390,8 +2244,8 @@
                                         </select>
                                     </div>
                                     <div class="form-item mb-14">
-                                        <label>Portfolio ID:</label>
-                                        <input type="text" id="comp-hist-filter-port" placeholder="e.g. PORT-INV-000001-01" class="form-input" style="background:#080c14; color:#fff;">
+                                        <label>Portfolio ID / Proposal ID:</label>
+                                        <input type="text" id="comp-hist-filter-port" placeholder="e.g. PORT-INV-000004 or RB-2026..." class="form-input" style="background:#080c14; color:#fff;">
                                     </div>
                                     <div class="form-item mb-14">
                                         <label>Date Range:</label>
@@ -2477,10 +2331,6 @@
                                 <span class="v-nav-icon">⚙️</span>
                                 <span class="v-nav-label">System Configuration</span>
                             </button>
-                            <button onclick="switchAdminView('data')" id="nav-adm-data" class="valtix-nav-item">
-                                <span class="v-nav-icon">🗄️</span>
-                                <span class="v-nav-label">Data Management</span>
-                            </button>
                         </nav>
                     </aside>
 
@@ -2489,20 +2339,8 @@
                         <!-- HEADER -->
                         <header class="valtix-header flex-between">
                             <div>
-                                <span class="v-pill-role">System Administrator</span>
                                 <h2 id="adm-page-title" class="valtix-title">Dashboard</h2>
                                 <p id="adm-page-subtitle" class="valtix-sub">Overview of users, portfolios, data and system status.</p>
-                            </div>
-                            <div class="flex-align-center gap-16">
-                                <div class="v-date-picker">📅 As of: 15 Sep 2026</div>
-                                <div class="v-bell-wrap" title="3 Notifications"><span style="font-size:16px;">🔔</span><span class="v-bell-badge">3</span></div>
-                                <div class="v-user-card">
-                                    <div class="v-avatar" style="background:linear-gradient(135deg, #10b981, #06b6d4);">👤</div>
-                                    <div>
-                                        <div class="v-user-name">Admin</div>
-                                        <div class="v-user-role">System Administrator</div>
-                                    </div>
-                                </div>
                             </div>
                         </header>
 
@@ -2584,7 +2422,7 @@
                                 <div class="v-card">
                                     <div class="card-head flex-between">
                                         <h4>Recent Admin Activity</h4>
-                                        <a href="javascript:void(0)" onclick="switchAdminView('data')" class="v-link-sub">View All</a>
+                                        <a href="javascript:void(0)" onclick="switchAdminView('users')" class="v-link-sub">View All</a>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="v-table">
@@ -2599,19 +2437,19 @@
                                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
                                         <button onclick="openAddEmployeeModal()" class="v-btn-outline" style="flex-direction:column; padding:16px 10px; text-align:center;">
                                             <span style="font-size:20px; margin-bottom:4px;">👤</span>
-                                            <span>Create User</span>
+                                            <span>Add User</span>
                                         </button>
                                         <button onclick="switchAdminView('config')" class="v-btn-outline" style="flex-direction:column; padding:16px 10px; text-align:center;">
                                             <span style="font-size:20px; margin-bottom:4px;">⚙️</span>
                                             <span>Manage Rules</span>
                                         </button>
-                                        <button onclick="switchAdminView('data')" class="v-btn-outline" style="flex-direction:column; padding:16px 10px; text-align:center;">
-                                            <span style="font-size:20px; margin-bottom:4px;">🗄️</span>
-                                            <span>Generate Dataset</span>
+                                        <button onclick="switchAdminView('users')" class="v-btn-outline" style="flex-direction:column; padding:16px 10px; text-align:center;">
+                                            <span style="font-size:20px; margin-bottom:4px;">👥</span>
+                                            <span>View Users</span>
                                         </button>
-                                        <button onclick="switchAdminView('data')" class="v-btn-outline" style="flex-direction:column; padding:16px 10px; text-align:center;">
-                                            <span style="font-size:20px; margin-bottom:4px;">📥</span>
-                                            <span>Import Data</span>
+                                        <button onclick="switchAdminView('config'); switchAdminConfigTab('fees');" class="v-btn-outline" style="flex-direction:column; padding:16px 10px; text-align:center;">
+                                            <span style="font-size:20px; margin-bottom:4px;">🏷️</span>
+                                            <span>Fee Schedule</span>
                                         </button>
                                     </div>
                                 </div>
@@ -2630,7 +2468,7 @@
                                         <button onclick="filterAdminUsersRole('COMPLIANCE_REVIEWER')" id="btn-adm-role-rev" class="det-subtab">Reviewers (1)</button>
                                         <button onclick="filterAdminUsersRole('ADMIN')" id="btn-adm-role-adm" class="det-subtab">Administrators (1)</button>
                                     </div>
-                                    <button onclick="openAddEmployeeModal()" class="v-btn-primary">+ Create User</button>
+                                    <button onclick="openAddEmployeeModal()" class="v-btn-primary">+ Add User</button>
                                 </div>
 
                                 <!-- Filter Bar -->
@@ -2694,64 +2532,6 @@
                             </div>
                         </div>
 
-                        <!-- PANE 4: DATA MANAGEMENT (IMAGE 2, PANE 4) -->
-                        <div id="view-adm-data" class="adm-view-pane hidden">
-                            <div class="v-card">
-                                <div class="detail-subtabs">
-                                    <button onclick="switchAdminDataSubTab('generation')" id="tab-adm-data-gen" class="det-subtab active">Dataset Generation</button>
-                                    <button onclick="switchAdminDataSubTab('import')" id="tab-adm-data-imp" class="det-subtab">Data Import</button>
-                                    <button onclick="switchAdminDataSubTab('validation')" id="tab-adm-data-val" class="det-subtab">Data Validation</button>
-                                    <button onclick="switchAdminDataSubTab('summary')" id="tab-adm-data-sum" class="det-subtab">Dataset Summary</button>
-                                    <button onclick="switchAdminDataSubTab('export')" id="tab-adm-data-exp" class="det-subtab">Export</button>
-                                </div>
-
-                                <div class="overview-two-col" style="grid-template-columns: 1fr 340px;">
-                                    <!-- Generation Form -->
-                                    <div class="v-card" style="margin-bottom:0;">
-                                        <div class="card-head"><h4>Generate Synthetic Dataset</h4></div>
-                                        <div class="form-item mb-14">
-                                            <label>Dataset Type:</label>
-                                            <select id="adm-data-type" class="form-input" style="background:#080c14; color:#fff;">
-                                                <option value="Full Dataset">Full Dataset (1,000 portfolios, 5,000 holdings)</option>
-                                                <option value="Starter Dataset">Starter Dataset (55 portfolios, 255 holdings)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-item mb-14">
-                                            <label>Random Seed (Fixed for Determinism):</label>
-                                            <input type="number" id="adm-data-seed" value="20261022" class="form-input" style="background:#080c14; color:#fff;">
-                                        </div>
-                                        <div class="form-item mb-16">
-                                            <label>Generate Components:</label>
-                                            <div style="display:flex; flex-direction:column; gap:8px; margin-top:6px; font-size:12px; color:#cbd5e1;">
-                                                <label><input type="checkbox" checked disabled> Investor Profiles (1,000 accounts)</label>
-                                                <label><input type="checkbox" checked disabled> Portfolios &amp; Holdings (5,000 positions)</label>
-                                                <label><input type="checkbox" checked disabled> Instruments (5,000 equities, bonds, commodities)</label>
-                                                <label><input type="checkbox" checked disabled> Market Prices (250 trading days historical)</label>
-                                                <label><input type="checkbox" checked disabled> Fee Schedules &amp; Constraints</label>
-                                            </div>
-                                        </div>
-                                        <button onclick="runAdminGenerateDataset()" id="btn-adm-gen-data" class="v-btn-primary" style="padding:10px 20px;">⚙ Generate Dataset</button>
-                                    </div>
-
-                                    <!-- Latest Dataset Summary -->
-                                    <div class="v-card" style="margin-bottom:0;">
-                                        <div class="card-head"><h4>Latest Dataset Summary</h4></div>
-                                        <div class="rebalance-summary-list">
-                                            <div class="summary-line"><span>👥 Portfolios</span><strong id="adm-sum-ports">1,000</strong></div>
-                                            <div class="summary-line"><span>🪙 Instruments</span><strong id="adm-sum-inst">5,000</strong></div>
-                                            <div class="summary-line"><span>📄 Holdings Records</span><strong id="adm-sum-hold">5,000</strong></div>
-                                            <div class="summary-line"><span>📅 Market Price Data</span><strong id="adm-sum-days">250 Days</strong></div>
-                                            <div class="summary-line"><span>🕒 Last Generated</span><strong id="adm-sum-date" style="font-size:11px; color:#10b981;">14 Sep 2026, 04:20 PM</strong></div>
-                                        </div>
-                                        <div class="mt-16 flex-align-center gap-10">
-                                            <button onclick="runAdminDataValidation()" class="v-btn-outline" style="flex:1;">Run Data Audit</button>
-                                            <button onclick="exportQueueCSV()" class="v-btn-outline">📥 Export</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
@@ -2789,14 +2569,14 @@
                     <h2 class="portivex-auth-title">Log in to your account</h2>
                     <p class="portivex-auth-desc">Enter your email and password to continue.</p>
 
-                    <form id="form-login" onsubmit="submitLogin(event)">
+                    <form id="form-login" onsubmit="submitLogin(event)" autocomplete="off">
                         <div class="portivex-form-group">
                             <label>Email Address</label>
                             <div class="portivex-input-wrapper">
                                 <span class="input-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                 </span>
-                                <input type="email" id="login-email" placeholder="Enter your email" required autocomplete="email">
+                                <input type="email" id="login-email" placeholder="Enter your email" required autocomplete="off">
                             </div>
                         </div>
 
@@ -2809,7 +2589,7 @@
                                 <span class="input-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                                 </span>
-                                <input type="password" id="login-pass" placeholder="Enter your password" required autocomplete="current-password">
+                                <input type="password" id="login-pass" placeholder="Enter your password" required autocomplete="new-password">
                                 <button type="button" class="btn-toggle-pass" onclick="togglePasswordVisibility('login-pass')" title="Show/Hide Password">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
                                 </button>
@@ -2830,14 +2610,14 @@
                     <h2 class="portivex-auth-title">Create your account</h2>
                     <p class="portivex-auth-desc">Enter your details to register as a new Customer.</p>
 
-                    <form id="form-signup" onsubmit="submitSignUp(event)">
+                    <form id="form-signup" onsubmit="submitSignUp(event)" autocomplete="off">
                         <div class="portivex-form-group">
                             <label>Full Name</label>
                             <div class="portivex-input-wrapper">
                                 <span class="input-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                                 </span>
-                                <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                                <input type="text" id="signup-name" placeholder="Enter your full name" required autocomplete="off">
                             </div>
                         </div>
 
@@ -2847,7 +2627,7 @@
                                 <span class="input-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                 </span>
-                                <input type="email" id="signup-email" placeholder="Enter your email" required autocomplete="email">
+                                <input type="email" id="signup-email" placeholder="Enter your email" required autocomplete="off">
                             </div>
                         </div>
 
@@ -2940,6 +2720,67 @@
     </div>
 
     <!-- =================================================================== -->
+    <!-- 3B. MODAL: CUSTOMER PLACE TRADE ORDER                               -->
+    <!-- =================================================================== -->
+    <div id="modal-customer-order" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <div class="modal-header flex-between">
+                <h3>Place Trade Order</h3>
+                <span class="modal-close" onclick="closeCustomerOrderModal()">&times;</span>
+            </div>
+            <p class="modal-desc">Execute a BUY or SELL order on institutional market instruments for your portfolio.</p>
+
+            <form onsubmit="event.preventDefault(); submitCustomerOrder();">
+                <div class="form-item">
+                    <label>Order Action:</label>
+                    <div style="display:flex; gap:12px; margin-top:4px;">
+                        <label style="flex:1; cursor:pointer; background:rgba(0, 212, 146, 0.12); border:1px solid #00d492; padding:10px; border-radius:6px; text-align:center; font-weight:700; color:#00d492;">
+                            <input type="radio" name="cust_order_side" value="BUY" checked onchange="updateCustOrderCalc()" style="margin-right:6px;"> BUY
+                        </label>
+                        <label style="flex:1; cursor:pointer; background:rgba(244, 63, 94, 0.12); border:1px solid #f43f5e; padding:10px; border-radius:6px; text-align:center; font-weight:700; color:#f43f5e;">
+                            <input type="radio" name="cust_order_side" value="SELL" onchange="updateCustOrderCalc()" style="margin-right:6px;"> SELL
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-item" style="margin-top:15px;">
+                    <label>Select Asset / Instrument:</label>
+                    <select id="cust-order-instrument" onchange="updateCustOrderCalc()" style="width:100%; padding:10px; border-radius:6px; background:#0f172a; color:#fff; border:1px solid #334155; font-size:14px;">
+                        <option value="SPY" data-price="100.77" data-class="EQUITY">US 500 Index Fund (SPY) - $100.77</option>
+                        <option value="QQQ" data-price="100.95" data-class="EQUITY">Tech Growth Shares (QQQ) - $100.95</option>
+                        <option value="BND" data-price="103.46" data-class="FIXED_INCOME">Treasury Bond Fund (BND) - $103.46</option>
+                        <option value="TLT" data-price="98.20" data-class="FIXED_INCOME">Government Securities (TLT) - $98.20</option>
+                        <option value="GLD" data-price="103.31" data-class="COMMODITY">Gold Bullion Reserve (GLD) - $103.31</option>
+                        <option value="VNQ" data-price="108.50" data-class="REAL_ESTATE">Real Estate Properties (VNQ) - $108.50</option>
+                    </select>
+                </div>
+
+                <div class="form-item" style="margin-top:15px;">
+                    <label>Quantity (Shares):</label>
+                    <input type="number" id="cust-order-quantity" value="10" min="1" max="10000" oninput="updateCustOrderCalc()" style="width:100%; padding:10px; border-radius:6px; background:#0f172a; color:#fff; border:1px solid #334155; font-size:14px;" required>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px; margin-top:15px;">
+                    <div class="flex-between" style="font-size:13px; color:#94a3b8; margin-bottom:6px;">
+                        <span>Unit Price:</span> <strong id="cust-order-unit-price" style="color:#fff;">$185.50</strong>
+                    </div>
+                    <div class="flex-between" style="font-size:13px; color:#94a3b8; margin-bottom:6px;">
+                        <span>Brokerage Fee:</span> <strong style="color:#fff;">$2.50</strong>
+                    </div>
+                    <div class="flex-between" style="font-size:14px; font-weight:700; color:#00d492; border-top:1px solid rgba(255,255,255,0.08); padding-top:6px;">
+                        <span>Total Notional:</span> <strong id="cust-order-total-est">$1,857.50</strong>
+                    </div>
+                </div>
+
+                <div class="modal-btn-row" style="margin-top:20px; display:flex; justify-content:flex-end; gap:10px;">
+                    <button type="button" onclick="closeCustomerOrderModal()" class="btn-secondary">Cancel</button>
+                    <button type="submit" id="btn-submit-cust-order" class="btn-primary-header" style="background:#00d492; color:#0f172a; font-weight:700;">Submit Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
     <!-- 4. MODAL: CREATE SUPPORT TICKET                                     -->
     <!-- =================================================================== -->
     <div id="modal-support" class="modal-backdrop hidden">
@@ -3004,39 +2845,41 @@
 
 
     <!-- =================================================================== -->
-    <!-- 6. MODAL: ADMIN PROVISION EMPLOYEE                                  -->
+    <!-- 6. MODAL: ADMIN PROVISION EMPLOYEE / USER                         -->
     <!-- =================================================================== -->
     <div id="modal-add-employee" class="modal-backdrop hidden">
         <div class="modal-card">
             <div class="modal-header flex-between">
-                <h3>Provision Company Employee</h3>
+                <h3>Add User</h3>
                 <span class="modal-close" onclick="closeAddEmployeeModal()">&times;</span>
             </div>
-            <p class="modal-desc">Create corporate login credentials for an Operations Analyst or Risk &amp; Compliance Reviewer.</p>
+            <p class="modal-desc">Provision account credentials and assign platform access roles.</p>
 
             <form onsubmit="submitAddEmployee(event)">
                 <div class="form-item">
-                    <label>Employee Full Name:</label>
+                    <label>Full Name:</label>
                     <input type="text" id="emp-name" placeholder="e.g. David Sterling" required>
                 </div>
                 <div class="form-item">
-                    <label>Corporate Email:</label>
-                    <input type="email" id="emp-email" placeholder="d.sterling@vestilo.com" required>
+                    <label>Email Address:</label>
+                    <input type="email" id="emp-email" placeholder="user@portivex.com" required>
                 </div>
                 <div class="form-item">
                     <label>Temporary Password:</label>
-                    <input type="password" id="emp-pass" value="employee123" required>
+                    <input type="password" id="emp-pass" value="Welcome2026!" required>
                 </div>
                 <div class="form-item">
                     <label>Assign Role:</label>
                     <select id="emp-role" required>
                         <option value="OPERATIONS_ANALYST">Operations Analyst</option>
                         <option value="COMPLIANCE_REVIEWER">Risk &amp; Compliance Reviewer</option>
+                        <option value="CUSTOMER">Customer</option>
+                        <option value="ADMIN">System Administrator</option>
                     </select>
                 </div>
                 <div class="modal-btn-row">
                     <button type="button" onclick="closeAddEmployeeModal()" class="btn-secondary">Cancel</button>
-                    <button type="submit" id="btn-submit-emp" class="btn-primary-header">Provision Account</button>
+                    <button type="submit" id="btn-submit-emp" class="btn-primary-header">+ Add User</button>
                 </div>
             </form>
         </div>
@@ -3237,6 +3080,6 @@
 
 
     <!-- Application Script Controller -->
-    <script src="/static/app.js"></script>
+    <script src="/static/app.js?v=20261114_admin_no_data_v14"></script>
 </body>
 </html>
